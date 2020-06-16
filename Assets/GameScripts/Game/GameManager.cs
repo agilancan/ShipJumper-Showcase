@@ -9,6 +9,37 @@ public class GameManager : MonoBehaviour
     public InputController InputController;
     public ChainManager ChainManager;
 
+    public List<Goal> Goals = new List<Goal>();
+
+    public string NextLevel = "";
+
+    private void Start()
+    {
+        ResumeGame();
+    }
+
+    public void CheckLevelCompletion()
+    {
+        bool levelComplete = true;
+        foreach(Goal goal in Goals)
+        {
+            if (!goal.GoalReached)
+            {
+                levelComplete = false;
+            }
+        }
+        if (levelComplete)
+        {
+            UIManager.WinObject.gameObject.SetActive(true);
+            PauseGame();
+        }
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(NextLevel);
+    }
+
     public void RestartGame() 
     {
         ResumeGame();

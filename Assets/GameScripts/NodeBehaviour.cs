@@ -9,6 +9,9 @@ public class NodeBehaviour : MonoBehaviour
     public Vector3 Velocity;
 
     public Dictionary<int, Vector3> VelocityInfluences = new Dictionary<int, Vector3>();
+
+    public Vector3 VelocityOverride;
+    public bool IsOverrideEnabled = false;
     
     void Start()
     {
@@ -16,16 +19,23 @@ public class NodeBehaviour : MonoBehaviour
         NodeRB = GetComponent<Rigidbody2D>();
         //NodeRB.velocity = Velocity;
         ConstantForce.force = Velocity;
+        IsOverrideEnabled = false;
     }
 
-    // Update is called once per frame
     void Update()
-    {
-        Vector3 velocity = Velocity;
-        foreach(Vector3 v in VelocityInfluences.Values)
+    {        
+        if (IsOverrideEnabled)
         {
-            velocity += v;
+            NodeRB.velocity = VelocityOverride;
         }
-        NodeRB.velocity = velocity;
+        else
+        {
+            Vector3 velocity = Velocity;
+            foreach (Vector3 v in VelocityInfluences.Values)
+            {
+                velocity += v;
+            }
+            NodeRB.velocity = velocity;
+        }        
     }
 }

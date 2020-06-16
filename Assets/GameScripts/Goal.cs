@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
+    public GameManager GameManager;
     public SpriteRenderer SR;
+
+    public bool GoalReached = false;
 
     private void Start()
     {
@@ -16,8 +19,9 @@ public class Goal : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            Debug.Log("hit");
             SR.color = Color.green;
+            GoalReached = true;
+            GameManager.CheckLevelCompletion();
         }
     }
 }

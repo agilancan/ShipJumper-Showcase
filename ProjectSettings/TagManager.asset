@@ -8,6 +8,7 @@ TagManager:
   - goal
   - chainLink
   - chainCutter
+  - triggerNodeAI
   layers:
   - Default
   - TransparentFX
