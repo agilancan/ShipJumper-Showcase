@@ -28,4 +28,18 @@ public class ChainManager : MonoBehaviour
 
         chain.EndLink.GetComponent<Rigidbody2D>().velocity = endLinkVelocity;
     }
+
+    public void CutAllChains()
+    {
+        foreach(Chain chain in Chains)
+        {
+            Destroy(chain.EndLink);
+            foreach(GameObject go in chain.ChainLinkList)
+            {
+                Destroy(go);
+            }
+            Destroy(chain.gameObject);
+        }
+        Chains.Clear();
+    }
 }

@@ -21,6 +21,7 @@ public class Chain : MonoBehaviour
 
     private void Start()
     {
+        //LinkWidth = LinkPrefab.GetComponent<CircleCollider2D>().radius/2;
         ChainLinkList.Add(EndLink);
         Link link = EndLink.GetComponent<Link>();
         link.ID = ID;
@@ -46,7 +47,7 @@ public class Chain : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (MaxLineDistance > LineDistance && !maxLineReached)
         {

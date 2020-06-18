@@ -12,6 +12,7 @@ public class Endlink : MonoBehaviour
 
     void ExecuteEndLine(Collider2D col)
     {
+        GetComponent<Rigidbody2D>().MovePosition(col.gameObject.transform.position);
         if (type == 0)
         {
             HingeJoint = col.gameObject.GetComponent<HingeJoint2D>();
@@ -23,7 +24,7 @@ public class Endlink : MonoBehaviour
             HingeJoint2 = col.gameObject.GetComponent<HingeJoint2D>();
             HingeJoint2.connectedBody = gameObject.GetComponent<Rigidbody2D>();
             Chain.ExecuteEndLine();
-        }
+        }        
     }
 
     void OnTriggerEnter2D(Collider2D col)

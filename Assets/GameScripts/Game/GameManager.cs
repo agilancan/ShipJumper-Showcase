@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public Player Player;
     public UIManager UIManager;
     public InputController InputController;
     public ChainManager ChainManager;
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
     public List<Goal> Goals = new List<Goal>();
 
     public string NextLevel = "";
+
+    public bool IsGamePaused = false;
 
     private void Start()
     {
@@ -48,11 +51,13 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        IsGamePaused = true;
         Time.timeScale = 0;
     }
 
     public void ResumeGame()
     {
+        IsGamePaused = false;
         Time.timeScale = 1;
     }
 }
