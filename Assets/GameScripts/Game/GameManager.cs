@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using Firebase;
+using Firebase.Analytics;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,6 +20,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(continuationAction: task =>
+        {
+            FirebaseAnalytics.SetAnalyticsCollectionEnabled(true);
+        });
         ResumeGame();
     }
 

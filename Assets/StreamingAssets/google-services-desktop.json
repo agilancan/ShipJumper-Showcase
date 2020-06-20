@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263192696046",
+    "firebase_url": "https://shipjumper-e2dc8.firebaseio.com",
+    "project_id": "shipjumper-e2dc8",
+    "storage_bucket": "shipjumper-e2dc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263192696046:android:9d971320802efac5440fff",
+        "android_client_info": {
+          "package_name": "com.Doohickey.ShipJumper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263192696046-tpj67uc0k7fm16st7jb3q7qm8f11f1t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClmut2XgzNqwtBx1XMqGsT3RjQJlTkVMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263192696046-tpj67uc0k7fm16st7jb3q7qm8f11f1t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
