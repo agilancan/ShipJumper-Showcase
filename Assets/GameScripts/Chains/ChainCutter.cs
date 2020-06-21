@@ -11,7 +11,12 @@ public class ChainCutter : MonoBehaviour
 
 	private bool isCutting = false;
 	private Vector2 previousPosition;
-	private GameObject currentBladeTrail;	
+	private GameObject currentBladeTrail;
+
+	private void Awake()
+	{
+		
+	}
 
 	public void UpdateCut(Vector2 newPosition)
 	{

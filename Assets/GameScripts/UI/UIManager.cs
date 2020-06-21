@@ -7,4 +7,11 @@ public class UIManager : MonoBehaviour
 {
     public GameObject RestartButton;
     public GameObject WinObject;
+
+    private void Awake()
+    {
+        //WinObject = GameObject.Find("YouWin");
+        //RestartButton = GameObject.Find("RestartButton");
+        //UIFeedbackInfo = FindObjectOfType<UIFeedbackInfo>();
+    }
 }

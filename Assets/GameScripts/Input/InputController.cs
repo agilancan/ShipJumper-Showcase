@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
-    public GameManager GameManager;
-    public ChainCutter ChainCutter;
+    private ChainCutter chainCutter;
+    private GameManager gameManager;
     private ChainManager chainManager;
     private Player player;
 
-    void Start()
+    private void Awake()
     {
-        chainManager = GameManager.ChainManager;
-        player = GameManager.Player;
+        gameManager = FindObjectOfType<GameManager>();
+        FindObjectOfType<GameManager>().InputController = this;
+        player = FindObjectOfType<Player>();
+        chainManager = FindObjectOfType<ChainManager>();
+        chainCutter = FindObjectOfType<ChainCutter>();
     }
 
     public bool IsDoubleTap()
@@ -49,15 +52,15 @@ public class InputController : MonoBehaviour
                 case TouchPhase.Began:
                     break;
                 case TouchPhase.Moved:
-                    if (!ChainCutter.IsCutting())
+                    if (!chainCutter.IsCutting())
                     {
-                        ChainCutter.StartCutting(targetWorldPosition);
+                        chainCutter.StartCutting(targetWorldPosition);
                     }
                     break;
                 case TouchPhase.Canceled:
                     break;
                 case TouchPhase.Ended:
-                    ChainCutter.StopCutting();
+                    chainCutter.StopCutting();
                     break;
             }
         }
@@ -70,14 +73,14 @@ public class InputController : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(1))
             {
-                ChainCutter.StartCutting(targetWorldPosition);
+                chainCutter.StartCutting(targetWorldPosition);
             }
             else if (Input.GetMouseButtonUp(1))
             {
-                ChainCutter.StopCutting();
+                chainCutter.StopCutting();
             }
         }
-        ChainCutter.UpdateCut(targetWorldPosition);
+        chainCutter.UpdateCut(targetWorldPosition);
     }
 
     void Update()

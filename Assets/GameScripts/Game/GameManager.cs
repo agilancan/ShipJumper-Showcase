@@ -12,19 +12,34 @@ public class GameManager : MonoBehaviour
     public InputController InputController;
     public ChainManager ChainManager;
 
-    public List<Goal> Goals = new List<Goal>();
+    public List<Goal> Goals;
 
     public string NextLevel = "";
 
     public bool IsGamePaused = false;
 
+    private float playTime = 0;
+
     private void Start()
     {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(continuationAction: task =>
+        /*FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(continuationAction: task =>
         {
             FirebaseAnalytics.SetAnalyticsCollectionEnabled(true);
-        });
+        });*/
         ResumeGame();
+    }
+
+    private void Update()
+    {
+        if (!IsGamePaused)
+        {
+            playTime += Time.deltaTime;
+        }         
+    }
+
+    public float GetPlayTime()
+    {
+        return playTime;
     }
 
     public void CheckLevelCompletion()
@@ -66,4 +81,5 @@ public class GameManager : MonoBehaviour
         IsGamePaused = false;
         Time.timeScale = 1;
     }
+
 }

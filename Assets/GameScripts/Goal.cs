@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
-    public GameManager GameManager;
+    public GameManager gameManager;
     public SpriteRenderer SR;
 
     public bool GoalReached = false;
 
-    private void Start()
+    private void Awake()
     {
         SR = gameObject.GetComponent<SpriteRenderer>();
+        gameManager = FindObjectOfType<GameManager>();
+        gameManager.Goals.Add(this);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -21,7 +23,7 @@ public class Goal : MonoBehaviour
         {
             SR.color = Color.green;
             GoalReached = true;
-            GameManager.CheckLevelCompletion();
+            gameManager.CheckLevelCompletion();
         }
     }
 }

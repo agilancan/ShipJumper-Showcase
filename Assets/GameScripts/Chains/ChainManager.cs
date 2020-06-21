@@ -11,6 +11,13 @@ public class ChainManager : MonoBehaviour
 
     private int chainCount = 1;
 
+    private void Awake()
+    {
+        FindObjectOfType<GameManager>().ChainManager = this;
+        ChainCutter = FindObjectOfType<ChainCutter>();
+        ShipTransform = FindObjectOfType<Player>().gameObject.transform;
+    }
+
     public void CreateChain(Vector2 targetWorldPosition)
     {
         
