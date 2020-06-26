@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Boundry : MonoBehaviour
 {
-    public GameManager GameManager;
+    public GameManager gameManager;
+
+    private void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            GameManager.UIManager.RestartButton.gameObject.SetActive(true);
-            GameManager.PauseGame();
+            gameManager.UIManager.RestartButton.gameObject.SetActive(true);
+            gameManager.PauseGame();
         }
     }
 }

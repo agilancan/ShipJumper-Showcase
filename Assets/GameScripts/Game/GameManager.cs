@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public List<Goal> Goals;
 
     public string NextLevel = "";
+    public string CurrentLevel = "";
 
     public bool IsGamePaused = false;
 

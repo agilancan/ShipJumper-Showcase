@@ -20,8 +20,9 @@ public class Player : MonoBehaviour
 
     private Vector2 launchVelocity;
 
-    private void Start()
+    private void Awake()
     {
+        GameManager = FindObjectOfType<GameManager>();
         CurrentMode = Mode.Normal;
         nodeBehaviour = GetComponent<NodeBehaviour>();
         rb = GetComponent<Rigidbody2D>();
