@@ -9,6 +9,10 @@ public class InputController : MonoBehaviour
     private ChainManager chainManager;
     private Player player;
 
+    private float lauchTimeLeft = 0;
+    private float currentForce;
+    private Vector2 direction;
+
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -35,7 +39,7 @@ public class InputController : MonoBehaviour
         return result;
     }
 
-    private void NormalPlayerInputs(bool isDoubleTap)
+    private void PlayerInput(bool isDoubleTap, ChainType ct)
     {
         Vector3 targetWorldPosition;
         if (Input.touchCount > 0)
@@ -44,7 +48,17 @@ public class InputController : MonoBehaviour
             targetWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
             if (isDoubleTap && chainManager.Chains.Count < 3)
             {
-                chainManager.CreateChain(targetWorldPosition);
+                if (!player.IsMindControlling)
+                {
+                    chainManager.CreateChain(targetWorldPosition, ct);
+                }
+                else
+                {
+                    direction = (targetWorldPosition - player.transform.position).normalized;
+                    player.MindControlledNode.VelocityOverride = direction * 2;
+                    lauchTimeLeft = 1;
+                    currentForce = 2;
+                }
             }
 
             switch (touch.phase)
@@ -69,7 +83,14 @@ public class InputController : MonoBehaviour
             targetWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (Input.GetMouseButtonDown(0))
             {
-                chainManager.CreateChain(targetWorldPosition);
+                if (!gameManager.Player.IsMindControlling)
+                {
+                    chainManager.CreateChain(targetWorldPosition, ct);
+                }
+                else
+                {
+
+                }                    
             }
             if (Input.GetMouseButtonDown(1))
             {
@@ -85,6 +106,24 @@ public class InputController : MonoBehaviour
 
     void Update()
     {
+        if (lauchTimeLeft >= 0)
+        {
+            lauchTimeLeft -= Time.deltaTime;
+            currentForce -= 0.01f;
+            if (currentForce >= 0)
+            {
+                player.MindControlledNode.VelocityOverride = direction * currentForce;
+            }
+        }
+        else
+        {
+            if (player.MindControlledNode)
+            {
+                player.MindControlledNode.IsOverrideEnabled = false;
+                player.MindControlledNode.VelocityOverride = Vector3.zero;
+                player.MindControlledNode = null;
+            }            
+        }
         bool isDoubleTap = false;
 
         for (var i = 0; i < Input.touchCount; ++i)
@@ -100,7 +139,7 @@ public class InputController : MonoBehaviour
         switch (player.CurrentMode)
         {
             case Player.Mode.Normal:
-                NormalPlayerInputs(isDoubleTap);
+                PlayerInput(isDoubleTap, ChainType.Normal);
                 break;
             case Player.Mode.Launch:
                 ShipLauncher sl = player.GetSL();
@@ -125,6 +164,15 @@ public class InputController : MonoBehaviour
                 
                 break;
             case Player.Mode.Launching:
+                break;
+            case Player.Mode.Connector:
+                PlayerInput(isDoubleTap, ChainType.Connector);
+                break;
+            case Player.Mode.Swapper:
+                PlayerInput(isDoubleTap, ChainType.Swapper);
+                break;
+            case Player.Mode.MindControl:
+                PlayerInput(isDoubleTap, ChainType.MindControl);
                 break;
         }
         

@@ -5,11 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameManager GameManager;
+
     public enum Mode
     {
         Normal,
         Launch,
-        Launching
+        Launching,
+        Connector,
+        Swapper,
+        MindControl
     }
     private NodeBehaviour nodeBehaviour;
     private Rigidbody2D rb;
@@ -17,13 +21,20 @@ public class Player : MonoBehaviour
     private ShipLauncher shipLauncher;
 
     public Mode CurrentMode;
+    public bool IsMindControlling;
+    public NodeBehaviour MindControlledNode;
+
+    public Color BaseColor;
+    public SpriteRenderer SR;
 
     private Vector2 launchVelocity;
 
     private void Awake()
     {
+        SR = GetComponent<SpriteRenderer>();
+        BaseColor = SR.color;
+        IsMindControlling = false;
         GameManager = FindObjectOfType<GameManager>();
-        CurrentMode = Mode.Normal;
         nodeBehaviour = GetComponent<NodeBehaviour>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -61,6 +72,12 @@ public class Player : MonoBehaviour
             case Mode.Launch:
                 break;
             case Mode.Launching:
+                break;
+            case Mode.Connector:
+                break;
+            case Mode.Swapper:
+                break;
+            case Mode.MindControl:
                 break;
         }
     }

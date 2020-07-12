@@ -6,34 +6,44 @@ public class ChainManager : MonoBehaviour
 {
     public ChainCutter ChainCutter;
     public Transform ShipTransform;
-    public GameObject ChainGameObject;
+    public List<GameObject> ChainPrefabs;
     public List<Chain> Chains = new List<Chain>();
+    public List<Chain> ConnectedChains = new List<Chain>();
 
+    private GameManager gameManager;
     private int chainCount = 1;
 
     private void Awake()
     {
-        FindObjectOfType<GameManager>().ChainManager = this;
+        gameManager = FindObjectOfType<GameManager>();
+        gameManager.ChainManager = this;
         ChainCutter = FindObjectOfType<ChainCutter>();
         ShipTransform = FindObjectOfType<Player>().gameObject.transform;
     }
 
-    public void CreateChain(Vector2 targetWorldPosition)
+    private GameObject getChainPrefab(ChainType ct)
     {
-        
-        GameObject chainObj = Instantiate(ChainGameObject, ShipTransform);
-        Chain chain = chainObj.GetComponent<Chain>();
-        chain.ChainManager = this;
-        chain.ID = chainCount;
-        chainCount++;
+        return ChainPrefabs.Find(go => go.GetComponent<Chain>().ChainType == ct);
+    }
 
-        Chains.Add(chain);
-        
-        Vector2 endLinkVelocity = new Vector2(targetWorldPosition.x - chain.EndLink.transform.position.x, targetWorldPosition.y - chain.EndLink.transform.position.y).normalized * 10;
-        chainObj.transform.SetParent(ShipTransform);
-        chain.NewLinkSpawn = ShipTransform;
+    public void CreateChain(Vector2 targetWorldPosition, ChainType ct)
+    {
+        if (!gameManager.Player.IsMindControlling)
+        {
+            GameObject chainObj = Instantiate(getChainPrefab(ct), ShipTransform);
+            Chain chain = chainObj.GetComponent<Chain>();
+            chain.ChainManager = this;
+            chain.ID = chainCount;
+            chainCount++;
 
-        chain.EndLink.GetComponent<Rigidbody2D>().velocity = endLinkVelocity;
+            Chains.Add(chain);
+
+            Vector2 endLinkVelocity = new Vector2(targetWorldPosition.x - chain.EndLink.transform.position.x, targetWorldPosition.y - chain.EndLink.transform.position.y).normalized * 10;
+            chainObj.transform.SetParent(ShipTransform);
+            chain.NewLinkSpawn = ShipTransform;
+
+            chain.EndLink.GetComponent<Rigidbody2D>().velocity = endLinkVelocity;
+        }        
     }
 
     public void CutAllChains()

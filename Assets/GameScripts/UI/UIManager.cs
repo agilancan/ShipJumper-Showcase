@@ -15,8 +15,8 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-        RestartButton.GetComponent<Button>().onClick.AddListener(gameManager.RestartGame);
-        RestartButtonEnd.GetComponent<Button>().onClick.AddListener(gameManager.RestartGame);
+        //RestartButton.GetComponent<Button>().onClick.AddListener(gameManager.RestartGame);
+        //RestartButtonEnd.GetComponent<Button>().onClick.AddListener(gameManager.RestartGame);
         LevelName.text = gameManager.CurrentLevel;
 
         //UIFeedbackInfo = FindObjectOfType<UIFeedbackInfo>();
