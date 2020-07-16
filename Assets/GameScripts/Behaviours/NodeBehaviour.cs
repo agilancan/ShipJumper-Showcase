@@ -22,11 +22,12 @@ public class NodeBehaviour : MonoBehaviour
         IsOverrideEnabled = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {        
         if (IsOverrideEnabled)
         {
             NodeRB.velocity = VelocityOverride;
+            //NodeRB.ad
         }
         else
         {

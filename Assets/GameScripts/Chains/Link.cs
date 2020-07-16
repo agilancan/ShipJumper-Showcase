@@ -21,18 +21,21 @@ public class Link : MonoBehaviour
             
             //ChainManager.ChainCutter.ColliderInfo.text = "In_" + ID;
             Chain chain = ChainManager.Chains.Find(c => c.ID == ID);
-            if (chain.ChainType == ChainType.MindControl)
-            {
-                gameManager.Player.IsMindControlling = false;
-            }
-            if (chain == null)
-            {
-                chain = ChainManager.ConnectedChains.Find(c => c.ID == ID);
-            }
             if (chain)
             {
-                chain.SelfDestruct();
-            }           
+                if (chain.ChainType == ChainType.MindControl)
+                {
+                    gameManager.Player.IsMindControlling = false;
+                }
+                if (chain == null)
+                {
+                    chain = ChainManager.ConnectedChains.Find(c => c.ID == ID);
+                }
+                if (chain)
+                {
+                    chain.SelfDestruct();
+                }
+            }                       
         }
     }
 }

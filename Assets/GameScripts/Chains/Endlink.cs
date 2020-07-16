@@ -20,12 +20,15 @@ public class Endlink : MonoBehaviour
 
     void ExecuteEndLine(Collider2D col)
     {
-        GetComponent<Rigidbody2D>().MovePosition(col.gameObject.transform.position);
+        gameObject.GetComponent<Rigidbody2D>().MovePosition(col.gameObject.transform.position);
         if (type == 0)
         {
             AnchorObject = col.gameObject;
             HingeJoint = AnchorObject.GetComponent<HingeJoint2D>();
             HingeJoint.connectedBody = gameObject.GetComponent<Rigidbody2D>();
+            Vector3 objLocalPosition = col.gameObject.transform.InverseTransformPoint(gameObject.transform.position);
+            HingeJoint.connectedAnchor = gameObject.transform.position;
+            HingeJoint.anchor = objLocalPosition;
             Chain.ExecuteEndLine();
         }
         else
@@ -33,6 +36,9 @@ public class Endlink : MonoBehaviour
             AnchorObject = col.gameObject;
             HingeJoint2 = AnchorObject.GetComponent<HingeJoint2D>();
             HingeJoint2.connectedBody = gameObject.GetComponent<Rigidbody2D>();
+            Vector3 objLocalPosition = col.gameObject.transform.InverseTransformPoint(gameObject.transform.position);
+            HingeJoint2.connectedAnchor = gameObject.transform.position;
+            HingeJoint2.anchor = objLocalPosition;
             Chain.ExecuteEndLine();
         }        
     }

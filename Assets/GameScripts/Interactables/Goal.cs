@@ -9,12 +9,17 @@ public class Goal : MonoBehaviour
     public SpriteRenderer SR;
 
     public bool GoalReached = false;
+    public bool IsEndGoal = false;
 
     private void Awake()
     {
         SR = gameObject.GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
         gameManager.Goals.Add(this);
+        if (IsEndGoal)
+        {
+            SR.color = Color.magenta;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)

@@ -46,14 +46,19 @@ public class GameManager : MonoBehaviour
     public void CheckLevelCompletion()
     {
         bool levelComplete = true;
+        bool endGoalReached = false;
         foreach(Goal goal in Goals)
         {
+            if (goal.IsEndGoal && goal.GoalReached)
+            {
+                endGoalReached = true;
+            }
             if (!goal.GoalReached)
             {
                 levelComplete = false;
             }
         }
-        if (levelComplete)
+        if (levelComplete || endGoalReached)
         {
             UIManager.WinObject.gameObject.SetActive(true);
             PauseGame();

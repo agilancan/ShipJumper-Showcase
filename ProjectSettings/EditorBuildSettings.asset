@@ -6,45 +6,63 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: ddebf85dd2a25aa4ab45066ef0e49536
+    path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L1_SingleChainPositioning.unity
+    guid: 0663a472a39b9ac438375ede1cdb60f8
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: c205211d32f390b43adb99fc1c374666
+    path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L2_FallingAndSwinging.unity
+    guid: 92f6a79b35f684945a162e329c55f858
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: da5e92446a181ea44a81170d4fe26ca4
+    path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L3_HorizontalCurrent.unity
+    guid: e754a2e3aaf0a304f8ac7a4c347c73d1
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: ab970262d08cf3f49b4bf4d5552b28c4
+    path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L4_Riding.unity
+    guid: ba3f237ba15918e4fb063afb9f41154a
   - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: e43ea01e7565831478685eb7c18f5a9a
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L1_RopeLM.unity
+    guid: 3a9f706da45b1d34eae2538e83a758eb
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
-    guid: e608f0de043924b498a241d8085645e7
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L2_AimingLM.unity
+    guid: 27d297532ce9c734bab59df695189ec1
   - enabled: 1
-    path: Assets/Scenes/Level7.unity
-    guid: 99a182ac88555604da5f84d55a6a3d6e
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L3_AnchorHangingLM.unity
+    guid: 2a7b19eda844b0b43bcddc300cdb88df
   - enabled: 1
-    path: Assets/Scenes/Level8.unity
-    guid: 8e349ca13b55dff4ea8d04443dccf1fe
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L4_ChainCuttingTiming.unity
+    guid: 9ee3d2e232a50bf4b9d1bed9f7ede112
   - enabled: 1
-    path: Assets/Scenes/Level9.unity
-    guid: 62711c4192885fb43a3ff419090c81b3
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L5_TimingAimingLM.unity
+    guid: ef3b36ca3e7e62d4892ec6cbdcafb3f9
   - enabled: 1
-    path: Assets/Scenes/Level10.unity
-    guid: 95bc89e4c27df9f4f9396bc9e3627394
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L6_ATP.unity
+    guid: 93dd8c17d6ed7cd4e83032fe96af759c
   - enabled: 1
-    path: Assets/Scenes/Level11.unity
-    guid: e1ad773feda1daf498453ad0ff05cfe2
+    path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L7_ATPLM.unity
+    guid: 3469414b54c86da4c8573752bb943f4e
   - enabled: 1
-    path: Assets/Scenes/Level12.unity
-    guid: 2b94c55acb5d1e8419d39092978a9f17
-  - enabled: 0
-    path: Assets/Scenes/LevelMindControl.unity
-    guid: 85d268aa9c7272f43a3c18f3a93151e9
-  - enabled: 0
-    path: Assets/Scenes/LevelSwapper.unity
-    guid: 16068a8746afef84aad184a131998e92
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L1_Obstacles.unity
+    guid: 52ea85f134dfb2741ba1c6f13d77d8e8
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L2_TightPositioning.unity
+    guid: d8caa89b2602cfa4ab7cc97caf641faa
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L3_ChainCutHop.unity
+    guid: 189dcc842311008429b2c9a1ffb75219
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L4_RisingHop.unity
+    guid: fb02b4a9c05ab6c45b8d32bc3b916439
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L5_KeepAbove.unity
+    guid: 73db8e797a29e374a917645c6f0e4f2c
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L6_PrecisionCut.unity
+    guid: b20018129edeeaa48b921457fa828ec7
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L7_PrecisionRiding.unity
+    guid: 39e0f8d3453320a43a7da6fce074cf20
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L8_EndTunnel.unity
+    guid: d04af89c4ee9a2d408696f5e5c2f7ef0
+  - enabled: 1
+    path: Assets/Scenes/Levels/W1S3_HazardAvoidance/W1_S3_L9_AngleTunnel.unity
+    guid: f1d7664de260449448e0e405f405ae6b
   m_configObjects: {}

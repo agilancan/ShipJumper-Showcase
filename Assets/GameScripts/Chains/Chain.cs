@@ -168,8 +168,10 @@ public class Chain : MonoBehaviour
                     link.ID = ID;
                     link.ChainManager = ChainManager;
                     ChainLinkList.Add(PrevLink);
+
                     Rigidbody2D prevRB = PrevLink.GetComponent<Rigidbody2D>();
                     eLinkHinge.connectedBody = prevRB;
+
                     PrevLink.GetComponent<HingeJoint2D>().connectedBody = prevRB;
                 }
                 else
@@ -185,7 +187,11 @@ public class Chain : MonoBehaviour
                     HingeJoint2D prevHinge2D = PrevLink.GetComponent<HingeJoint2D>();
                     if (prevHinge2D.connectedBody != newPrevLinkRB)
                     {
-                        PrevLink.GetComponent<HingeJoint2D>().connectedBody = newPrevLinkRB;
+                        HingeJoint2D hj2D = PrevLink.GetComponent<HingeJoint2D>();
+                        hj2D.connectedBody = newPrevLinkRB;
+                        hj2D.connectedAnchor = newPrevLinkRB.transform.position;
+                        hj2D.anchor = hj2D.gameObject.transform.InverseTransformPoint(
+                            newPrevLinkRB.transform.position);
                     }
                 }
                 SecondLink = StartLink;
