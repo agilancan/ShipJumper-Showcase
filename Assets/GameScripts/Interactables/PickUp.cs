@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PowerUp
+public enum PickUpType
 {
     Swapper,
     MindControl
 }
 
-public class PowerPickUp : MonoBehaviour
+public class PickUp : MonoBehaviour
 {
-    public PowerUp PowerUp;
+    public PickUpType PickUpType;
     public float RespawnTime = 12;
     public GameManager gameManager;
 
@@ -39,7 +39,7 @@ public class PowerPickUp : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            if(PowerUp == PowerUp.Swapper)
+            if(PickUpType == PickUpType.Swapper)
             {
                 timeLeft = RespawnTime;
                 SR.enabled = false;

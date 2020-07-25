@@ -9,9 +9,21 @@ public enum ChainType
     Swapper,
     MindControl
 }
+
+[System.Serializable]
+public class ChainStatus
+{
+    public bool IsPowered;
+    public ChainStatus()
+    {
+        IsPowered = false;
+    }
+
+}
 public class Chain : MonoBehaviour
 {    
     public ChainType ChainType;
+    public ChainStatus ChainStatus;
 
     public ChainManager ChainManager;
     public GameObject LinkPrefab;
@@ -98,6 +110,12 @@ public class Chain : MonoBehaviour
 
     private void normalSelfDestruction()
     {
+        Power power = EndLink.GetComponent<Endlink>()
+            .AnchorObject.GetComponent<Power>();
+        if (power)
+        {
+            power.Disconnect();
+        }
         Destroy(EndLink);
         foreach (GameObject go in ChainLinkList)
         {

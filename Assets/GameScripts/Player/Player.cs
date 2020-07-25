@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class PlayerStatus
+{
+    public bool IsPowered;
+    public PlayerStatus()
+    {
+        IsPowered = false;
+    }
+}
+
 public class Player : MonoBehaviour
 {
     public GameManager GameManager;
@@ -15,6 +25,7 @@ public class Player : MonoBehaviour
         Swapper,
         MindControl
     }
+    public PlayerStatus PlayerStatus;
     private NodeBehaviour nodeBehaviour;
     private Rigidbody2D rb;
     [SerializeField]

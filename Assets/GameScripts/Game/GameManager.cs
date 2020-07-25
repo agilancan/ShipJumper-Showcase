@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public UIManager UIManager;
     public InputController InputController;
     public ChainManager ChainManager;
+    public PowerManager PowerManager;
 
     public List<Goal> Goals;
 

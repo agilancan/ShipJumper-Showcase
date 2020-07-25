@@ -50,6 +50,12 @@ public class ChainManager : MonoBehaviour
     {
         foreach(Chain chain in Chains)
         {
+            Power power = chain.EndLink.GetComponent<Endlink>()
+            .AnchorObject.GetComponent<Power>();
+            if (power)
+            {
+                power.Disconnect();
+            }
             Destroy(chain.EndLink);
             foreach(GameObject go in chain.ChainLinkList)
             {

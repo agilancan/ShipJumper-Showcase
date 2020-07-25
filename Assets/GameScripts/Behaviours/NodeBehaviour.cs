@@ -12,9 +12,17 @@ public class NodeBehaviour : MonoBehaviour
 
     public Vector3 VelocityOverride;
     public bool IsOverrideEnabled = false;
-    
-    void Start()
+
+    public Power Power;
+
+    private GameManager gameManager;
+    private Player player;
+
+    private void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+        player = gameManager.Player;
+        Power = GetComponent<Power>();
         ConstantForce = GetComponent<ConstantForce2D>();
         NodeRB = GetComponent<Rigidbody2D>();
         //NodeRB.velocity = Velocity;
@@ -22,8 +30,9 @@ public class NodeBehaviour : MonoBehaviour
         IsOverrideEnabled = false;
     }
 
-    void FixedUpdate()
-    {        
+
+    private void moveNodeUpdate()
+    {
         if (IsOverrideEnabled)
         {
             NodeRB.velocity = VelocityOverride;
@@ -37,6 +46,32 @@ public class NodeBehaviour : MonoBehaviour
                 velocity += v;
             }
             NodeRB.velocity = velocity;
-        }        
+        }
+    }
+    private void FixedUpdate()
+    {
+        if (Power)
+        {
+            if(Power.PowerType == PowerType.Drain)
+            {
+                if(player.PlayerStatus.IsPowered
+                && Power.IsConnected())
+                {
+                    moveNodeUpdate();
+                }
+                else
+                {
+                    NodeRB.velocity = Vector2.zero;
+                }
+            }
+            else
+            {
+                moveNodeUpdate();
+            }
+        }
+        else
+        {
+            moveNodeUpdate();
+        }                  
     }
 }

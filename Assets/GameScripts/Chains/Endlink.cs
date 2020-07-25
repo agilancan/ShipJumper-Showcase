@@ -45,46 +45,54 @@ public class Endlink : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "anchorObj")
+        if (!Chain.IsConnected)
         {
-            if (Chain.ChainType == ChainType.Swapper)
+            Power power = col.gameObject.GetComponent<Power>();
+            if (power)
             {
-                Vector2 nodePos = col.gameObject.transform.position;
-                col.gameObject.transform.position = gameManager.Player.gameObject.transform.position;
-                gameManager.Player.gameObject.transform.position = nodePos;
-                Chain.ExecuteEndLine();
-                Chain.SelfDestruct();
-                gameManager.Player.CurrentMode = Player.Mode.Normal;
-                gameManager.Player.SR.color = gameManager.Player.BaseColor;
+                power.Connect();
             }
-            else
+            if (col.gameObject.tag == "anchorObj")
             {
-                if (Chain.ChainType == ChainType.MindControl)
-                {                    
-                    gameManager.Player.IsMindControlling = true;
-                    NodeBehaviour nb = col.gameObject.GetComponent<NodeBehaviour>();
-                    gameManager.Player.MindControlledNode = nb;
+                if (Chain.ChainType == ChainType.Swapper)
+                {
+                    Vector2 nodePos = col.gameObject.transform.position;
+                    col.gameObject.transform.position = gameManager.Player.gameObject.transform.position;
+                    gameManager.Player.gameObject.transform.position = nodePos;
+                    Chain.ExecuteEndLine();
+                    Chain.SelfDestruct();
+                    gameManager.Player.CurrentMode = Player.Mode.Normal;
+                    gameManager.Player.SR.color = gameManager.Player.BaseColor;
                 }
-                ExecuteEndLine(col);
-                Chain.IsConnected = true;
-            }            
-        }
-        else if(col.gameObject.tag == "triggerNodeAI")
-        {
-            if(Chain.ChainType == ChainType.Swapper)
-            {
-                Chain.ExecuteEndLine();
-                Chain.SelfDestruct();
-                Vector2 nodePos = col.gameObject.transform.position;
-                col.gameObject.transform.position = gameObject.transform.position;
-                gameObject.transform.position = nodePos;                
+                else
+                {
+                    if (Chain.ChainType == ChainType.MindControl)
+                    {
+                        gameManager.Player.IsMindControlling = true;
+                        NodeBehaviour nb = col.gameObject.GetComponent<NodeBehaviour>();
+                        gameManager.Player.MindControlledNode = nb;
+                    }
+                    ExecuteEndLine(col);
+                    Chain.IsConnected = true;
+                }
             }
-            else
+            else if (col.gameObject.tag == "triggerNodeAI")
             {
-                ExecuteEndLine(col);
-                Chain.IsConnected = true;
-                col.gameObject.GetComponent<TriggerNodeAI>().ExecuteTrigger();
-            }            
-        }
+                if (Chain.ChainType == ChainType.Swapper)
+                {
+                    Chain.ExecuteEndLine();
+                    Chain.SelfDestruct();
+                    Vector2 nodePos = col.gameObject.transform.position;
+                    col.gameObject.transform.position = gameObject.transform.position;
+                    gameObject.transform.position = nodePos;
+                }
+                else
+                {
+                    ExecuteEndLine(col);
+                    Chain.IsConnected = true;
+                    col.gameObject.GetComponent<TriggerNodeAI>().ExecuteTrigger();
+                }
+            }
+        }        
     }
 }
