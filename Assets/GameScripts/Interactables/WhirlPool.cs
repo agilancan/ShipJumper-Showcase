@@ -49,12 +49,13 @@ public class WhirlPool : MonoBehaviour
     private void Update()
     {
         if (playerNodeBehaviour)
-        {
-            if (!playerNodeBehaviour.VelocityInfluences.ContainsKey(id))
+        {            
+            if (playerNodeBehaviour.VelocityInfluences.ContainsKey(id))
             {
                 Vector2 direction = 
                     (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
                 playerNodeBehaviour.VelocityInfluences[id] = direction * PullForce;
+                Debug.Log(playerNodeBehaviour.VelocityInfluences[id]);
             }
         }
     }

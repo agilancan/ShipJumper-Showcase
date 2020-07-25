@@ -4,6 +4,8 @@ using Firebase.Analytics;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Firebase.Firestore;
+using Firebase.Extensions;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
         {
             FirebaseAnalytics.SetAnalyticsCollectionEnabled(true);
         });*/
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         ResumeGame();
     }
 
@@ -61,13 +64,32 @@ public class GameManager : MonoBehaviour
         if (levelComplete || endGoalReached)
         {
             UIManager.WinObject.gameObject.SetActive(true);
+            uploadPlayTime();
             PauseGame();
         }
+    }
+
+    private void uploadPlayTime()
+    {
+        FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+        Dictionary<string, object> playTime = new Dictionary<string, object>
+        {
+            {"LevelName",  CurrentLevel},            
+            {"playtime", GetPlayTime() },
+            {"timestamp", FieldValue.ServerTimestamp }
+    };
+        db.Collection("LevelPlayTimes")
+                .AddAsync(playTime);
     }
 
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(NextLevel);
+    }
+
+    public void Unstable_LoadPreviousScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void RestartGame() 

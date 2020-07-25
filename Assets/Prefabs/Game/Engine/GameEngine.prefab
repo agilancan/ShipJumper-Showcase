@@ -212,7 +212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1804079993562584a80ee3f030fb2a10, type: 3}
   m_Color: {r: 1, g: 0.6084906, b: 0.6084906, a: 1}
   m_FlipX: 0
@@ -305,6 +305,9 @@ MonoBehaviour:
   shipLauncher: {fileID: 0}
   CurrentMode: 0
   IsMindControlling: 0
+  MindControlledNode: {fileID: 0}
+  BaseColor: {r: 0, g: 0, b: 0, a: 0}
+  SR: {fileID: 0}
 --- !u!1 &8511021271897778988
 GameObject:
   m_ObjectHideFlags: 0
