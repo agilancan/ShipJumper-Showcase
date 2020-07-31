@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class WhirlPool : MonoBehaviour
 {
+    public Power Power;
     public float PullForce;
     public Transform TargetDestination;
 
     private NodeBehaviour playerNodeBehaviour;
+    private GameManager gameManager;
 
     int id;
+
+    private Vector2 targetDirection = Vector2.zero;
     private void Start()
     {
         id = gameObject.GetInstanceID();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -22,8 +27,21 @@ public class WhirlPool : MonoBehaviour
             playerNodeBehaviour = col.gameObject.GetComponent<NodeBehaviour>();
             if (!playerNodeBehaviour.VelocityInfluences.ContainsKey(id))
             {
-                Vector2 direction = 
+                Vector2 direction = Vector2.zero;
+                if (Power)
+                {
+                    if ((Power.IsConnected() && gameManager.Player.PlayerStatus.IsPowered) 
+                        || Power.PowerType == PowerType.Source)
+                    {
+                        direction =
+                        (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
+                    }
+                }
+                else
+                {
+                    direction =
                     (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
+                }
                 playerNodeBehaviour.VelocityInfluences.Add(id, direction * PullForce);
             }
         }
@@ -52,10 +70,23 @@ public class WhirlPool : MonoBehaviour
         {            
             if (playerNodeBehaviour.VelocityInfluences.ContainsKey(id))
             {
-                Vector2 direction = 
-                    (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
-                playerNodeBehaviour.VelocityInfluences[id] = direction * PullForce;
-                Debug.Log(playerNodeBehaviour.VelocityInfluences[id]);
+                if (Power)
+                {
+                    if ((Power.IsConnected() && gameManager.Player.PlayerStatus.IsPowered)
+                        || Power.PowerType == PowerType.Source)
+                    {
+                        targetDirection = (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
+                    }
+                    else
+                    {
+                        targetDirection = Vector2.zero;
+                    }
+                }
+                else
+                {
+                    targetDirection = (TargetDestination.position - playerNodeBehaviour.gameObject.transform.position).normalized;
+                }
+                playerNodeBehaviour.VelocityInfluences[id] = targetDirection * PullForce;
             }
         }
     }

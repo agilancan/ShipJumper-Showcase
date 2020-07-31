@@ -53,6 +53,7 @@ public class Chain : MonoBehaviour
         ChainLinkList.Add(EndLink);
         Link link = EndLink.GetComponent<Link>();
         link.ID = ID;
+        link.Chain = this;
         link.ChainManager = ChainManager;
     }
 
@@ -110,8 +111,12 @@ public class Chain : MonoBehaviour
 
     private void normalSelfDestruction()
     {
-        Power power = EndLink.GetComponent<Endlink>()
-            .AnchorObject.GetComponent<Power>();
+        Endlink endlink = EndLink.GetComponent<Endlink>();
+        Power power = null;
+        if (endlink.AnchorObject)
+        {
+            power = endlink.AnchorObject.GetComponent<Power>();
+        }
         if (power)
         {
             power.Disconnect();
@@ -184,6 +189,7 @@ public class Chain : MonoBehaviour
                     PrevLink = Instantiate(LinkPrefab, NewLinkSpawn);
                     Link link = PrevLink.GetComponent<Link>();
                     link.ID = ID;
+                    link.Chain = this;
                     link.ChainManager = ChainManager;
                     ChainLinkList.Add(PrevLink);
 
@@ -198,6 +204,7 @@ public class Chain : MonoBehaviour
                     PrevLink = Instantiate(LinkPrefab, NewLinkSpawn);
                     Link link = PrevLink.GetComponent<Link>();
                     link.ID = ID;
+                    link.Chain = this;
                     link.ChainManager = ChainManager;
                     ChainLinkList.Add(PrevLink);
                     Rigidbody2D newPrevLinkRB = PrevLink.GetComponent<Rigidbody2D>();

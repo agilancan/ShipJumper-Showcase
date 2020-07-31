@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3882144751297638181}
   - component: {fileID: 3882144751297638177}
   - component: {fileID: 7441718513322535411}
+  - component: {fileID: -3522866384580752827}
   m_Layer: 0
   m_Name: NodeAI
   m_TagString: anchorObj
@@ -140,6 +141,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0, z: 0}
   VelocityOverride: {x: 0, y: 0, z: 0}
   IsOverrideEnabled: 0
+  Power: {fileID: 0}
 --- !u!233 &3882144751297638177
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -175,3 +177,17 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 0
+--- !u!114 &-3522866384580752827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882144751297638183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf323c7ceb30e64baf4fa9c3257ee08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerType: 0
+  isConnected: 0

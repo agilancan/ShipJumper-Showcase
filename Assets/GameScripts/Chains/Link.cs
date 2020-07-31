@@ -6,6 +6,7 @@ public class Link : MonoBehaviour
 {
     public ChainManager ChainManager;
     public int ID;
+    public Chain Chain;
 
     private GameManager gameManager;
     private void Start()
@@ -15,27 +16,14 @@ public class Link : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //ChainManager.ChainCutter.ColliderInfo.text = "Out_" + ID + "_" + col.tag;
         if (col.tag == "chainCutter")
         {
-            
-            //ChainManager.ChainCutter.ColliderInfo.text = "In_" + ID;
-            Chain chain = ChainManager.Chains.Find(c => c.ID == ID);
-            if (chain)
+            if (Chain.ChainType == ChainType.MindControl)
             {
-                if (chain.ChainType == ChainType.MindControl)
-                {
-                    gameManager.Player.IsMindControlling = false;
-                }
-                if (chain == null)
-                {
-                    chain = ChainManager.ConnectedChains.Find(c => c.ID == ID);
-                }
-                if (chain)
-                {
-                    chain.SelfDestruct();
-                }
-            }                       
+                gameManager.Player.IsMindControlling = false;
+            }
+            Debug.Log("Self Destruct");
+            Chain.SelfDestruct();
         }
     }
 }
