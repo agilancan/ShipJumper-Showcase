@@ -79,15 +79,24 @@ public class Player : MonoBehaviour
         switch (CurrentMode)
         {
             case Mode.Normal:
+                if (PlayerStatus.IsPowered)
+                {
+                    SR.color = Color.yellow;
+                }
+                else
+                {
+                    SR.color = BaseColor;
+                }
+                break;
+            case Mode.Swapper:
+                SR.color = Color.black;
                 break;
             case Mode.Launch:
                 break;
             case Mode.Launching:
                 break;
             case Mode.Connector:
-                break;
-            case Mode.Swapper:
-                break;
+                break;            
             case Mode.MindControl:
                 break;
         }

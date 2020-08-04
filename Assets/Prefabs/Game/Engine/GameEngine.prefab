@@ -278,6 +278,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: -1, z: 0}
   VelocityOverride: {x: 0, y: 0, z: 0}
   IsOverrideEnabled: 0
+  Power: {fileID: 0}
 --- !u!247 &345351662472964804
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -302,6 +303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  PlayerStatus:
+    IsPowered: 0
   shipLauncher: {fileID: 0}
   CurrentMode: 0
   IsMindControlling: 0
@@ -322,6 +325,7 @@ GameObject:
   - component: {fileID: 883545290161797554}
   - component: {fileID: 5720223565748420053}
   - component: {fileID: 8242649296476232428}
+  - component: {fileID: 2788092124026809624}
   m_Layer: 0
   m_Name: GameEngine
   m_TagString: Untagged
@@ -362,6 +366,7 @@ MonoBehaviour:
   InputController: {fileID: 7297002206631555017}
   ChainManager: {fileID: 883545290161797554}
   PowerManager: {fileID: 8242649296476232428}
+  SharkAttractorManager: {fileID: 2788092124026809624}
   Goals: []
   NextLevel: Level7
   CurrentLevel: 
@@ -427,5 +432,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9308f013dfe3f194d8d950e383cd683c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerList: []
+--- !u!114 &2788092124026809624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511021271897778988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7589476d05d6cb24bb9ab9e41df9f697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

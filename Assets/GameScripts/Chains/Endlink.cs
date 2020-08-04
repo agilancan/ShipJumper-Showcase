@@ -47,20 +47,30 @@ public class Endlink : MonoBehaviour
     {
         if (!Chain.IsConnected)
         {
-            Power power = col.gameObject.GetComponent<Power>();
-            if (power)
+            SharkAttractor sa = col.gameObject.GetComponent<SharkAttractor>();
+            Swapper swapper = col.gameObject.GetComponent<Swapper>();
+            if (sa && Chain.ChainType != ChainType.Swapper)
+            {
+                sa.Activate(Chain);
+            }
+            Power power = col.gameObject.GetComponent<Power>();            
+            if (swapper)
+            {
+                swapper.ActivateSwapperMode();
+            }
+            if (power && Chain.ChainType != ChainType.Swapper)
             {
                 power.Connect();
             }
             if (col.gameObject.tag == "anchorObj")
             {
-                if (Chain.ChainType == ChainType.Swapper)
+                if (Chain.ChainType == ChainType.Swapper && !swapper)
                 {
+                    Chain.ExecuteEndLine();
+                    gameManager.ChainManager.CutAllChains();
                     Vector2 nodePos = col.gameObject.transform.position;
                     col.gameObject.transform.position = gameManager.Player.gameObject.transform.position;
-                    gameManager.Player.gameObject.transform.position = nodePos;
-                    Chain.ExecuteEndLine();
-                    Chain.SelfDestruct();
+                    gameManager.Player.gameObject.transform.position = nodePos;                    
                     gameManager.Player.CurrentMode = Player.Mode.Normal;
                     gameManager.Player.SR.color = gameManager.Player.BaseColor;
                 }

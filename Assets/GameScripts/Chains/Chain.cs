@@ -112,15 +112,25 @@ public class Chain : MonoBehaviour
     private void normalSelfDestruction()
     {
         Endlink endlink = EndLink.GetComponent<Endlink>();
-        Power power = null;
         if (endlink.AnchorObject)
         {
-            power = endlink.AnchorObject.GetComponent<Power>();
+            Power power = endlink.AnchorObject.GetComponent<Power>();
+            SharkAttractor sa = endlink.AnchorObject.GetComponent<SharkAttractor>();
+            
+            if (power)
+            {
+                power.Disconnect();
+            }
+            if (sa)
+            {
+                if (sa.IsActive())
+                {
+                    sa.Deactivate();
+                }                
+            }
+            
         }
-        if (power)
-        {
-            power.Disconnect();
-        }
+        
         Destroy(EndLink);
         foreach (GameObject go in ChainLinkList)
         {

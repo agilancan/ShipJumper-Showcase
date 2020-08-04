@@ -48,14 +48,24 @@ public class ChainManager : MonoBehaviour
 
     public void CutAllChains()
     {
-        foreach(Chain chain in Chains)
+        Endlink endlink;
+        foreach (Chain chain in Chains)
         {
-            Power power = chain.EndLink.GetComponent<Endlink>()
-            .AnchorObject.GetComponent<Power>();
-            if (power)
+            endlink = chain.EndLink.GetComponent<Endlink>();
+            if (endlink.AnchorObject)
             {
-                power.Disconnect();
+                Power power = endlink.AnchorObject.GetComponent<Power>();
+                SharkAttractor sa = endlink.AnchorObject.GetComponent<SharkAttractor>();
+                if (power)
+                {
+                    power.Disconnect();
+                }
+                if (sa)
+                {
+                    sa.Deactivate();
+                }
             }
+            
             Destroy(chain.EndLink);
             foreach(GameObject go in chain.ChainLinkList)
             {

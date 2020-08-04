@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public InputController InputController;
     public ChainManager ChainManager;
     public PowerManager PowerManager;
+    public SharkAttractorManager SharkAttractorManager;
 
     public List<Goal> Goals;
 
