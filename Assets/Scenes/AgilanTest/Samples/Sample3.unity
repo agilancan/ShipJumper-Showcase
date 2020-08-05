@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &122848469
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4892,7 +4892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &290574539
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -9678,7 +9678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &587364532
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -14576,7 +14576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &863751575
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -19411,7 +19411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1995230326
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -30547,6 +30547,7 @@ MonoBehaviour:
   Velocity: {x: 1, y: 0, z: 0}
   VelocityOverride: {x: 0, y: 0, z: 0}
   IsOverrideEnabled: 0
+  Power: {fileID: 0}
 --- !u!50 &2674907767335924699
 Rigidbody2D:
   serializedVersion: 4
@@ -30608,6 +30609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameManager: {fileID: 0}
+  PlayerStatus:
+    IsPowered: 0
   shipLauncher: {fileID: 0}
   CurrentMode: 0
   IsMindControlling: 0
@@ -35538,6 +35541,8 @@ MonoBehaviour:
   UIManager: {fileID: 3154754066734499107}
   InputController: {fileID: 4940986626109404881}
   ChainManager: {fileID: 3285158441385402538}
+  PowerManager: {fileID: 0}
+  SharkAttractorManager: {fileID: 0}
   Goals: []
   NextLevel: W1_S3_L1_Obstacles
   CurrentLevel: W1_S2_L7_ATPLM
