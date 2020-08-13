@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: e6712831950a98f4d9977580d69f336c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: L_ThirdIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2454
+      y: 2185
+      width: 559
+      height: 1017
+    spriteID: 5a67e4bb1a1eacd449a3d9b78430e9da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1531, y: 1695}
+  - name: L_SecondIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1002
+      y: 2185
+      width: 876
+      height: 1626
+    spriteID: f09c1d97e85863945b44ba2121c30522
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 314, y: 1847}
+  - name: L_FirstIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2185
+      width: 990
+      height: 1768
+    spriteID: 9fc9df58c394bdc43b5cf5e3b3e07c98
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -569, y: 1989}
+  - name: S_ThirdIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1886
+      y: 3251
+      width: 477
+      height: 754
+    spriteID: 389c0130e17fd764c92d3cc00751a3a6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -901, y: 2909}
+  - name: S_SecondIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2454
+      y: 3210
+      width: 559
+      height: 438
+    spriteID: ae5589d20cb2a8141be07c22bf0ff8f4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -253, y: 2431}
+  - name: S_FirstIce
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1886
+      y: 2185
+      width: 560
+      height: 1058
+    spriteID: 38714d4e4b258e34a9bbeeff5a01e6ad
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -820, y: 1844}
+  - name: Sky
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3840
+      height: 1132
+    spriteID: f4fa6e0da1fa62044a1ff1715f930e9c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -1024}
+  - name: Water
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1144
+      width: 3840
+      height: 1033
+    spriteID: 5df6f8cc89f81bb4cb98e491c9913d97
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1144}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: LargeIceberg
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 113
+    mosaicPosition: {x: 0, y: 0}
+  - name: L_ThirdIce
+    spriteName: L_ThirdIce
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5a67e4bb1a1eacd449a3d9b78430e9da
+    layerID: 112
+    mosaicPosition: {x: 2454, y: 2185}
+  - name: L_SecondIce
+    spriteName: L_SecondIce
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f09c1d97e85863945b44ba2121c30522
+    layerID: 111
+    mosaicPosition: {x: 1002, y: 2185}
+  - name: L_FirstIce
+    spriteName: L_FirstIce
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9fc9df58c394bdc43b5cf5e3b3e07c98
+    layerID: 110
+    mosaicPosition: {x: 4, y: 2185}
+  - name: SmallIceBerg
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 108
+    mosaicPosition: {x: 0, y: 0}
+  - name: S_ThirdIce
+    spriteName: S_ThirdIce
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 389c0130e17fd764c92d3cc00751a3a6
+    layerID: 107
+    mosaicPosition: {x: 1886, y: 3251}
+  - name: S_SecondIce
+    spriteName: S_SecondIce
+    isGroup: 0
+    parentIndex: 4
+    spriteID: ae5589d20cb2a8141be07c22bf0ff8f4
+    layerID: 106
+    mosaicPosition: {x: 2454, y: 3210}
+  - name: S_FirstIce
+    spriteName: S_FirstIce
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 38714d4e4b258e34a9bbeeff5a01e6ad
+    layerID: 105
+    mosaicPosition: {x: 1886, y: 2185}
+  - name: Sky
+    spriteName: Sky
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f4fa6e0da1fa62044a1ff1715f930e9c
+    layerID: 115
+    mosaicPosition: {x: 4, y: 4}
+  - name: Water
+    spriteName: Water
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5df6f8cc89f81bb4cb98e491c9913d97
+    layerID: 79
+    mosaicPosition: {x: 4, y: 1144}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: W1_Surface Texture
+  prefabAssetName: W1_Surface Prefab
+  spriteLibAssetName: W1_Surface Sprite Lib
+  secondarySpriteTextures: []
