@@ -506,7 +506,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 99
     mosaicPosition: {x: 0, y: 0}
   - name: Layer 9 copy 2
@@ -590,7 +590,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 121
     mosaicPosition: {x: 0, y: 0}
   - name: Propeller
