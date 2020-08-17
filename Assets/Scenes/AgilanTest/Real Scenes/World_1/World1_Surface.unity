@@ -5672,8 +5672,8 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.99954915, b: 0.9198113, a: 1}
-  m_Intensity: 0.7
+  m_Color: {r: 0.990566, g: 0.8924439, b: 0.9889125, a: 1}
+  m_Intensity: 0.8
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 000000006793a20e8df766646bfc3262
   m_LightCookieSprite: {fileID: 0}
@@ -12221,9 +12221,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1684469645
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 245535591
+  m_SortingLayer: 1
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -12255,7 +12255,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2310745886072914731}
   serializedVersion: 6
-  lengthInSec: 2
+  lengthInSec: 10
   simulationSpeed: 0.1
   stopAction: 0
   cullingMode: 0
@@ -12437,7 +12437,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9032574, g: 0.9622642, b: 0.955147, a: 1}
+      maxColor: {r: 0.6389735, g: 0.6039216, b: 0.78431374, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -13080,7 +13080,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 1
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -13703,7 +13703,7 @@ ParticleSystem:
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -0.5
+      scalar: -0.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -16931,7 +16931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2310745886072914731}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 18.03, z: -1.16}
+  m_LocalPosition: {x: 7.09, y: 18.03, z: -1.16}
   m_LocalScale: {x: 14.883751, y: 1.379125, z: 0.75916}
   m_Children: []
   m_Father: {fileID: 1022844986}
