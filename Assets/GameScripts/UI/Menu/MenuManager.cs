@@ -51,7 +51,7 @@ public class MenuManager : MonoBehaviour
         SceneID = 0;
         destroyButtons();
         GameObject go;
-        for(int i = 1; i <= 5; i++)
+        for(int i = 1; i <= 6; i++)
         {
             go = Instantiate(ButtonPrefab, ButtonContentList);            
             ButtonList.Add(go);
