@@ -3205,6 +3205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2501963009812896827}
   - component: {fileID: 8227260988000079034}
+  - component: {fileID: 5181085923482240099}
   m_Layer: 0
   m_Name: GameUI
   m_TagString: Untagged
@@ -3243,6 +3244,18 @@ MonoBehaviour:
   WinObject: {fileID: 3729199780644879913}
   RestartButtonEnd: {fileID: 1799303886614009974}
   LevelName: {fileID: 8930674326333168903}
+--- !u!114 &5181085923482240099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758378397694426011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6591b8af8e11e439c666e7f21c405a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7554130055740537572
 GameObject:
   m_ObjectHideFlags: 0
