@@ -1431,6 +1431,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameFramework (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8903402218698040769, guid: f89e39ff398bd994ebd20d09a522c940,
+        type: 3}
+      propertyPath: CurrentLevel
+      value: World2_Seafloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903402218698040769, guid: f89e39ff398bd994ebd20d09a522c940,
+        type: 3}
+      propertyPath: NextLevel
+      value: World3_Surface
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f89e39ff398bd994ebd20d09a522c940, type: 3}
 --- !u!4 &1994988515 stripped

@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 2319335337596462454, guid: f89e39ff398bd994ebd20d09a522c940,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2319335337596462454, guid: f89e39ff398bd994ebd20d09a522c940,
         type: 3}
@@ -195,6 +195,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameFramework (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903402218698040769, guid: f89e39ff398bd994ebd20d09a522c940,
+        type: 3}
+      propertyPath: CurrentLevel
+      value: World3_Seafloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903402218698040769, guid: f89e39ff398bd994ebd20d09a522c940,
+        type: 3}
+      propertyPath: NextLevel
+      value: World4_Surface
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f89e39ff398bd994ebd20d09a522c940, type: 3}
