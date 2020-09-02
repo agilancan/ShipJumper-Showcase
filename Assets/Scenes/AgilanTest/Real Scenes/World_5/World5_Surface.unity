@@ -10801,8 +10801,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.3529412, b: 0.37254903, a: 0.2509804}
-      maxColor: {r: 1, g: 0.3529412, b: 0.37254903, a: 0.21176471}
+      minColor: {r: 0.8301887, g: 0.27803493, b: 0.2947668, a: 0.2509804}
+      maxColor: {r: 0.5566038, g: 0.19166073, b: 0.2027196, a: 0.21176471}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -23078,8 +23078,8 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.7
+  m_Color: {r: 0.16037738, g: 0.020425422, b: 0.020425422, a: 1}
+  m_Intensity: 1.43
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 000000006793a20e8df766646bfc3262
   m_LightCookieSprite: {fileID: 0}
