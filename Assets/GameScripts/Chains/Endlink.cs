@@ -76,12 +76,6 @@ public class Endlink : MonoBehaviour
                 }
                 else
                 {
-                    if (Chain.ChainType == ChainType.MindControl)
-                    {
-                        gameManager.Player.IsMindControlling = true;
-                        NodeBehaviour nb = col.gameObject.GetComponent<NodeBehaviour>();
-                        gameManager.Player.MindControlledNode = nb;
-                    }
                     ExecuteEndLine(col);
                     Chain.IsConnected = true;
                 }

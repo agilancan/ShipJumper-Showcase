@@ -309,8 +309,6 @@ MonoBehaviour:
     IsPowered: 0
   shipLauncher: {fileID: 0}
   CurrentMode: 0
-  IsMindControlling: 0
-  MindControlledNode: {fileID: 0}
   BaseColor: {r: 0, g: 0, b: 0, a: 0}
   SR: {fileID: 0}
 --- !u!1 &8511021271897778988
@@ -401,9 +399,7 @@ MonoBehaviour:
   ShipTransform: {fileID: 345351662472964800}
   ChainPrefabs:
   - {fileID: 8883454583938140900, guid: 9236e09039d6d8f4d8df0949fabda0ab, type: 3}
-  - {fileID: 6193225567190502569, guid: 9932a60fb969e3440b3d7d7801f7d7cf, type: 3}
   - {fileID: 8883454583938140900, guid: 402b8ed73113cd14f8a0688d6ca58790, type: 3}
-  - {fileID: 8883454583938140900, guid: a4c19f5f25595924997bbea0d75d08f6, type: 3}
   Chains: []
   ConnectedChains: []
 --- !u!114 &5720223565748420053

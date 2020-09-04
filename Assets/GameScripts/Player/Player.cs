@@ -21,9 +21,7 @@ public class Player : MonoBehaviour
         Normal,
         Launch,
         Launching,
-        Connector,
-        Swapper,
-        MindControl
+        Swapper
     }
     public PlayerStatus PlayerStatus;
     private NodeBehaviour nodeBehaviour;
@@ -32,8 +30,6 @@ public class Player : MonoBehaviour
     private ShipLauncher shipLauncher;
 
     public Mode CurrentMode;
-    public bool IsMindControlling;
-    public NodeBehaviour MindControlledNode;
 
     public Color BaseColor;
     public SpriteRenderer SR;
@@ -44,7 +40,6 @@ public class Player : MonoBehaviour
     {
         SR = GetComponent<SpriteRenderer>();
         BaseColor = SR.color;
-        IsMindControlling = false;
         GameManager = FindObjectOfType<GameManager>();
         nodeBehaviour = GetComponent<NodeBehaviour>();
         rb = GetComponent<Rigidbody2D>();
@@ -94,10 +89,6 @@ public class Player : MonoBehaviour
             case Mode.Launch:
                 break;
             case Mode.Launching:
-                break;
-            case Mode.Connector:
-                break;            
-            case Mode.MindControl:
                 break;
         }
     }
