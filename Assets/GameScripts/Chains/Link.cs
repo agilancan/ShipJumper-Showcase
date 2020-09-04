@@ -18,11 +18,6 @@ public class Link : MonoBehaviour
     {
         if (col.tag == "chainCutter")
         {
-            if (Chain.ChainType == ChainType.MindControl)
-            {
-                gameManager.Player.IsMindControlling = false;
-            }
-            Debug.Log("Self Destruct");
             Chain.SelfDestruct();
         }
     }

@@ -67,12 +67,17 @@ public class MenuManager : MonoBehaviour
         CurrentSceneLevelData.World = world.ToString();
         CurrentSceneLevelData.Sequence = null;
         CurrentSceneLevelData.Level = null;
+        List<LevelData> worldList = LevelDataList.Where(level => level.World == world.ToString()).ToList();
         SceneID = 1;
         destroyButtons();
-        int sCount = 3;
-        if (world > 3)
+        int sCount = 1;
+        foreach (LevelData levelData in worldList)
         {
-            sCount = 2;            
+            int seqNum = int.Parse(levelData.Sequence);
+            if(seqNum > sCount)
+            {
+                sCount = seqNum;
+            }
         }
         GameObject go;
         for (int i = 1; i <= sCount; i++)

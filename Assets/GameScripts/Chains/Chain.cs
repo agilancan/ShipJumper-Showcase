@@ -5,9 +5,7 @@ using UnityEngine;
 public enum ChainType
 {
     Normal,
-    Connector,
-    Swapper,
-    MindControl
+    Swapper
 }
 
 [System.Serializable]
@@ -63,50 +61,6 @@ public class Chain : MonoBehaviour
         prevRB.MovePosition(NewLinkSpawn.transform.position);
         PrevLink.GetComponent<HingeJoint2D>().connectedBody = NewLinkSpawn.gameObject.GetComponent<Rigidbody2D>();
         maxLineReached = true;
-
-        if (ChainType == ChainType.Connector)
-        {
-            Chain otherConnectorChain = null;
-            foreach(Chain chain in ChainManager.Chains)
-            {
-                Debug.Log(chain.ID + " " + chain.ChainType);
-                if(chain.ID != ID && chain.ChainType == ChainType.Connector)
-                {
-                    otherConnectorChain = chain;
-                    Debug.Log("OtherChain");
-                }
-            }
-            if(otherConnectorChain != null)
-            {
-                HingeJoint2D thisStartLinkHinge = StartLink.GetComponent<HingeJoint2D>();
-                HingeJoint2D otherStartLinkHinge = otherConnectorChain.StartLink.GetComponent<HingeJoint2D>();
-
-                thisStartLinkHinge.connectedBody = otherConnectorChain.StartLink.GetComponent<Rigidbody2D>();
-                //otherStartLinkHinge.SecondLink
-                otherStartLinkHinge.connectedBody = StartLink.GetComponent<Rigidbody2D>();
-
-                ConnectedChainCount++;
-                otherConnectorChain.IsConnected = true;
-                otherConnectorChain.ConnectedID = ConnectedChainCount;
-                IsConnected = true;
-                ConnectedID = ConnectedChainCount;
-
-                ChainManager.Chains.Remove(this);
-                ChainManager.Chains.Remove(otherConnectorChain);
-                ChainManager.ConnectedChains.Add(this);
-                ChainManager.ConnectedChains.Add(otherConnectorChain);
-
-                //EndLink.GetComponent<Endlink>().AnchorObject.GetComponent<HingeJoint2D>().connectedBody = null;
-                //thisStartLinkHinge.connectedBody = EndLink.GetComponent<Rigidbody2D>();
-
-                //thisStartLinkHinge.connectedBody.gameObject.GetComponent<>
-                //StartLink.GetComponent
-                //StarLink
-                //otherConnectorChain.EndLink
-                //HingeJoint2D hj2D = StartLink.GetComponent<HingeJoint2D>();
-                //hj2D.connectedBody = otherConnectorChain.EndLink.GetComponent<Rigidbody2D>();
-            }
-        }
     }
 
     private void normalSelfDestruction()
@@ -148,38 +102,6 @@ public class Chain : MonoBehaviour
                 break;
             case ChainType.Swapper:
                 normalSelfDestruction();
-                break;
-            case ChainType.MindControl:
-                normalSelfDestruction();
-                break;
-            case ChainType.Connector:
-                Chain otherConnectorChain = null;
-                foreach (Chain chain in ChainManager.ConnectedChains)
-                {
-                    Debug.Log(chain.ID + " " + chain.ChainType);
-                    if (chain.ID != ID)
-                    {
-                        otherConnectorChain = chain;
-                    }
-                }
-                if (otherConnectorChain)
-                {
-                    Destroy(otherConnectorChain.EndLink);
-                    foreach (GameObject go in otherConnectorChain.ChainLinkList)
-                    {
-                        Destroy(go);
-                    }
-                    ChainManager.ConnectedChains.Remove(otherConnectorChain);
-                    Destroy(otherConnectorChain.gameObject);
-
-                    Destroy(EndLink);
-                    foreach (GameObject go in ChainLinkList)
-                    {
-                        Destroy(go);
-                    }
-                    ChainManager.ConnectedChains.Remove(this);
-                    Destroy(gameObject);
-                }
                 break;
         }        
     }
@@ -251,13 +173,7 @@ public class Chain : MonoBehaviour
             case ChainType.Normal:
                 NormalChainUpdate();
                 break;
-            case ChainType.Connector:
-                NormalChainUpdate();
-                break;
             case ChainType.Swapper:
-                NormalChainUpdate();
-                break;
-            case ChainType.MindControl:
                 NormalChainUpdate();
                 break;
         }
