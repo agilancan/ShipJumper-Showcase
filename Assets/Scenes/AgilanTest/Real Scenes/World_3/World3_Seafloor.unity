@@ -302,7 +302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &85261148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -367,6 +367,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1236958424}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &177160856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177160859}
+  - component: {fileID: 177160858}
+  - component: {fileID: 177160857}
+  m_Layer: 0
+  m_Name: TropicalFish6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &177160857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177160856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &177160858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177160856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 40fa1ae445dfe394fadb0e9aeedcd135,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &177160859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177160856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177635975
 GameObject:
@@ -605,6 +685,166 @@ MonoBehaviour:
   - {x: -7.3470726, y: -10.962763, z: 0}
   - {x: -1.7887291, y: 11.756812, z: 0}
   - {x: -1.9243438, y: 11.761538, z: 0}
+--- !u!1 &247096298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247096301}
+  - component: {fileID: 247096300}
+  - component: {fileID: 247096299}
+  m_Layer: 0
+  m_Name: TropicalFish3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &247096299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247096298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &247096300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247096298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 05de8f4a502dc8b45bcdcda4bc87dbb6,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &247096301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247096298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &281103772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 281103775}
+  - component: {fileID: 281103774}
+  - component: {fileID: 281103773}
+  m_Layer: 0
+  m_Name: TropicalFish13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &281103773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281103772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &281103774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281103772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: d7f43e9a80ac3e1498722a1d85de12b0,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &281103775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281103772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364761748
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &394673814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -768,6 +1008,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1236958424}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &401103761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401103764}
+  - component: {fileID: 401103763}
+  - component: {fileID: 401103762}
+  m_Layer: 0
+  m_Name: TropicalFish8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &401103762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401103761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &401103763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401103761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: b60cf1b4b462b674c8300848ccfe4fc8,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &401103764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401103761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429730092
 GameObject:
@@ -891,7 +1211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &524537853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -973,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &539252728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1055,7 +1375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &703110512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,7 +1540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &742225848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1451,6 +1771,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &826917921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826917924}
+  - component: {fileID: 826917923}
+  - component: {fileID: 826917922}
+  m_Layer: 0
+  m_Name: TropicalFish11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &826917922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826917921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &826917923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826917921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: ac9a2067b275bd84b88c9df084b0e05b,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &826917924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826917921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &829247119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &844153818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1843,7 +2243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &904233229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2079,7 +2479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &985456821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2343,6 +2743,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1077261056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077261059}
+  - component: {fileID: 1077261058}
+  - component: {fileID: 1077261057}
+  m_Layer: 0
+  m_Name: TropicalFish14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1077261057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077261056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1077261058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077261056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: a6fb4bb48f2aea940aa0d559827da4d5,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1077261059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077261056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125973705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2949,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1249279352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249279355}
+  - component: {fileID: 1249279354}
+  - component: {fileID: 1249279353}
+  m_Layer: 0
+  m_Name: TropicalFish7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1249279353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249279352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1249279354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249279352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: ea85e165a583907468634c0648902c5d,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1249279355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249279352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1249396164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,6 +3111,246 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1269410602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269410605}
+  - component: {fileID: 1269410604}
+  - component: {fileID: 1269410603}
+  m_Layer: 0
+  m_Name: TropicalFish1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1269410603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269410602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1269410604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269410602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: f242c1f753888834b9c6625b27a5b534,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1269410605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269410602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1335550714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335550717}
+  - component: {fileID: 1335550716}
+  - component: {fileID: 1335550715}
+  m_Layer: 0
+  m_Name: TropicalFish16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1335550715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335550714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1335550716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335550714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: efef9d7bc6e2c284d9a8bb1a66fad790,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1335550717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335550714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1388487273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388487276}
+  - component: {fileID: 1388487275}
+  - component: {fileID: 1388487274}
+  m_Layer: 0
+  m_Name: TropicalFish5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1388487274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388487273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1388487275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388487273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 9d6e4f5d0af446a449c9d2e09a01843c,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1388487276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388487273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418142050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,6 +3422,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 429730093}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1419101546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419101549}
+  - component: {fileID: 1419101548}
+  - component: {fileID: 1419101547}
+  m_Layer: 0
+  m_Name: TropicalFish12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1419101547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419101546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1419101548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419101546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: fe92dcd129da71843889f27eb43e0b45,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1419101549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419101546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444196873
 GameObject:
@@ -2793,7 +3673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1456790197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3030,7 +3910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1545221094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3140,6 +4020,86 @@ Transform:
   m_Father: {fileID: 1236958424}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633509540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633509543}
+  - component: {fileID: 1633509542}
+  - component: {fileID: 1633509541}
+  m_Layer: 0
+  m_Name: TropicalFish10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1633509541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633509540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1633509542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633509540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: bf8e592cfa418f145bf403ab334c7872,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1633509543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633509540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678808899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3239,7 +4199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1704142805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3377,6 +4337,166 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1745151669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745151672}
+  - component: {fileID: 1745151671}
+  - component: {fileID: 1745151670}
+  m_Layer: 0
+  m_Name: TropicalFish15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1745151670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745151669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1745151671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745151669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: c3ee8243c22c36e46a52bc32dba21c73,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1745151672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745151669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1774900921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774900924}
+  - component: {fileID: 1774900923}
+  - component: {fileID: 1774900922}
+  m_Layer: 0
+  m_Name: TropicalFish9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1774900922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774900921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &1774900923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774900921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: e7ba0431a5022bc42aec1c7912368aca,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &1774900924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774900921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780470253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3393,7 +4513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1780470254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3475,7 +4595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1816684048
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3639,7 +4759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1884521554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4023,6 +5143,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2069721914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069721917}
+  - component: {fileID: 2069721916}
+  - component: {fileID: 2069721915}
+  m_Layer: 0
+  m_Name: TropicalFish4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2069721915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069721914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &2069721916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069721914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: ac337fb93d1e1f847a66a7c6f5f79f21,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &2069721917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069721914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2081385801
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,7 +5239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2081385802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4188,6 +5388,86 @@ Transform:
   m_Father: {fileID: 1236958424}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &2086943619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086943622}
+  - component: {fileID: 2086943621}
+  - component: {fileID: 2086943620}
+  m_Layer: 0
+  m_Name: TropicalFish2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2086943620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086943619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 0.7
+  WanderJitter: 20
+  WanderRadius: 4
+  WanderDistance: 5
+  WanderPriority: 10
+  CohesionRadius: 10
+  CohesionPriority: 20
+  AlignmentRadius: 50
+  AlignmentPriority: 50
+  SeperationRadius: 5
+  SeperationPriority: 70
+  AvoidanceRadius: 30
+  AvoidancePriority: 20
+--- !u!114 &2086943621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086943619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 04adb06d8911ee04eab6ca7363e3d87e,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 12
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 17
+  SpawnRadius: 20
+--- !u!4 &2086943622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086943619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 8, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136100665
 GameObject:
   m_ObjectHideFlags: 0

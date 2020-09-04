@@ -507,9 +507,9 @@ MonoBehaviour:
   CohesionPriority: 60
   AlignmentRadius: 100
   AlignmentPriority: 100
-  SeperationRadius: 10
+  SeperationRadius: 200
   SeperationPriority: 120
-  AvoidanceRadius: 40
+  AvoidanceRadius: 100
   AvoidancePriority: 20
 --- !u!114 &900804245
 MonoBehaviour:
@@ -525,14 +525,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MemberPrefab: {fileID: 8822458555706130902, guid: d3608c981b0362746aaf3d6640dc26a1,
     type: 3}
-  EnemyPrefab: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
-    type: 3}
-  MemberCount: 50
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 70
   EnemyCount: 0
   MemberList: []
   EnemyList: []
-  Bounds: 14
-  SpawnRadius: 12
+  Bounds: 9
+  SpawnRadius: 4
 --- !u!4 &900804246
 Transform:
   m_ObjectHideFlags: 0
@@ -755,6 +754,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1351497180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351497183}
+  - component: {fileID: 1351497182}
+  - component: {fileID: 1351497181}
+  m_Layer: 0
+  m_Name: SardinesFlockManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1351497181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351497180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: -2
+  MaxVelocity: 4
+  WanderJitter: 10
+  WanderRadius: 2
+  WanderDistance: 3
+  WanderPriority: 10
+  CohesionRadius: 20
+  CohesionPriority: 60
+  AlignmentRadius: 100
+  AlignmentPriority: 100
+  SeperationRadius: 200
+  SeperationPriority: 120
+  AvoidanceRadius: 100
+  AvoidancePriority: 20
+--- !u!114 &1351497182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351497180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: bc49d62c133f5e140b03c2c68b595a39,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 70
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 9
+  SpawnRadius: 4
+--- !u!4 &1351497183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351497180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418142050
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +988,86 @@ Transform:
   - {fileID: 1125973706}
   m_Father: {fileID: 3072640299402608295}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745582965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745582968}
+  - component: {fileID: 1745582967}
+  - component: {fileID: 1745582966}
+  m_Layer: 0
+  m_Name: SardinesFarFlockManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1745582966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745582965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: -2
+  MaxVelocity: 4
+  WanderJitter: 10
+  WanderRadius: 2
+  WanderDistance: 3
+  WanderPriority: 10
+  CohesionRadius: 20
+  CohesionPriority: 60
+  AlignmentRadius: 100
+  AlignmentPriority: 100
+  SeperationRadius: 200
+  SeperationPriority: 120
+  AvoidanceRadius: 100
+  AvoidancePriority: 20
+--- !u!114 &1745582967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745582965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 2d2c0d9d706646f4c916111a18627d8d,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 70
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 9
+  SpawnRadius: 4
+--- !u!4 &1745582968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745582965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820443584
 GameObject:
@@ -1071,9 +1230,9 @@ MonoBehaviour:
   CohesionPriority: 60
   AlignmentRadius: 100
   AlignmentPriority: 100
-  SeperationRadius: 10
+  SeperationRadius: 200
   SeperationPriority: 120
-  AvoidanceRadius: 40
+  AvoidanceRadius: 100
   AvoidancePriority: 20
 --- !u!114 &1994303513
 MonoBehaviour:
@@ -1089,14 +1248,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MemberPrefab: {fileID: 8822458555706130902, guid: 83f1c797b0fdcf841bc1f59016f3eeb5,
     type: 3}
-  EnemyPrefab: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
-    type: 3}
-  MemberCount: 50
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 70
   EnemyCount: 0
   MemberList: []
   EnemyList: []
-  Bounds: 14
-  SpawnRadius: 12
+  Bounds: 9
+  SpawnRadius: 4
 --- !u!4 &1994303514
 Transform:
   m_ObjectHideFlags: 0
@@ -1253,7 +1411,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 245535591
   m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc9a82f2fe408d94b928204319d35c0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -17125,6 +17125,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8536261064358291215, guid: 688ed95379f9bf241a1d558f774cbfc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688ed95379f9bf241a1d558f774cbfc9, type: 3}
 --- !u!4 &602654008 stripped
@@ -19453,6 +19458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8536261064358291215, guid: 688ed95379f9bf241a1d558f774cbfc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688ed95379f9bf241a1d558f774cbfc9, type: 3}
 --- !u!4 &909500812 stripped
@@ -20461,6 +20471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Eel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536261064358291215, guid: 688ed95379f9bf241a1d558f774cbfc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688ed95379f9bf241a1d558f774cbfc9, type: 3}
@@ -28342,6 +28357,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1644835469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644835472}
+  - component: {fileID: 1644835471}
+  - component: {fileID: 1644835470}
+  m_Layer: 0
+  m_Name: EelFarFlockManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1644835470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644835469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: -2
+  MaxVelocity: 1
+  WanderJitter: 10
+  WanderRadius: 2
+  WanderDistance: 3
+  WanderPriority: 10
+  CohesionRadius: 20
+  CohesionPriority: 60
+  AlignmentRadius: 100
+  AlignmentPriority: 100
+  SeperationRadius: 200
+  SeperationPriority: 120
+  AvoidanceRadius: 100
+  AvoidancePriority: 20
+--- !u!114 &1644835471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644835469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 443575a5b4e1cc84fbd2de9f05a07771,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 10
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 30
+  SpawnRadius: 20
+--- !u!4 &1644835472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644835469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678200711
 GameObject:
   m_ObjectHideFlags: 0
@@ -28784,6 +28879,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1736487317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736487320}
+  - component: {fileID: 1736487319}
+  - component: {fileID: 1736487318}
+  m_Layer: 0
+  m_Name: EelFlockManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1736487318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736487317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3d8805df3b144a871063a1b1fcd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFov: 120
+  MaxAcceleration: 0.5
+  MaxVelocity: 1
+  WanderJitter: 10
+  WanderRadius: 2
+  WanderDistance: 3
+  WanderPriority: 10
+  CohesionRadius: 20
+  CohesionPriority: 60
+  AlignmentRadius: 100
+  AlignmentPriority: 100
+  SeperationRadius: 200
+  SeperationPriority: 120
+  AvoidanceRadius: 100
+  AvoidancePriority: 20
+--- !u!114 &1736487319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736487317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bd20bfe7ebd2c45a7b5074a72b8c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MemberPrefab: {fileID: 8822458555706130902, guid: 37a1b6902ef5b1b4586226237b4c0eaa,
+    type: 3}
+  EnemyPrefab: {fileID: 0}
+  MemberCount: 10
+  EnemyCount: 0
+  MemberList: []
+  EnemyList: []
+  Bounds: 30
+  SpawnRadius: 20
+--- !u!4 &1736487320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736487317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0269746, y: -2.626913, z: -5.6582146}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1785458170
 GameObject:
   m_ObjectHideFlags: 0
@@ -30194,6 +30369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8536261064358291215, guid: 688ed95379f9bf241a1d558f774cbfc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688ed95379f9bf241a1d558f774cbfc9, type: 3}
 --- !u!4 &1949703860 stripped
@@ -31177,6 +31357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Eel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536261064358291215, guid: 688ed95379f9bf241a1d558f774cbfc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688ed95379f9bf241a1d558f774cbfc9, type: 3}
@@ -32785,7 +32970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4069127873901825073
 Transform:
   m_ObjectHideFlags: 0

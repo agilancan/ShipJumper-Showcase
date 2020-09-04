@@ -2572,8 +2572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxFov: 120
-  MaxAcceleration: 2
-  MaxVelocity: 4
+  MaxAcceleration: 1
+  MaxVelocity: 2
   WanderJitter: 10
   WanderRadius: 2
   WanderDistance: 3
@@ -2602,8 +2602,8 @@ MonoBehaviour:
     type: 3}
   EnemyPrefab: {fileID: 8822458555706130902, guid: 48577520b3cb1eb4083c8457f6afa7d5,
     type: 3}
-  MemberCount: 25
-  EnemyCount: 25
+  MemberCount: 10
+  EnemyCount: 10
   MemberList: []
   EnemyList: []
   Bounds: 14
@@ -8640,8 +8640,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxFov: 120
-  MaxAcceleration: 2
-  MaxVelocity: 4
+  MaxAcceleration: 1
+  MaxVelocity: 2
   WanderJitter: 10
   WanderRadius: 2
   WanderDistance: 3
@@ -8670,8 +8670,8 @@ MonoBehaviour:
     type: 3}
   EnemyPrefab: {fileID: 8822458555706130902, guid: de71a5c993188ae42975309eb2a37976,
     type: 3}
-  MemberCount: 25
-  EnemyCount: 25
+  MemberCount: 10
+  EnemyCount: 10
   MemberList: []
   EnemyList: []
   Bounds: 14

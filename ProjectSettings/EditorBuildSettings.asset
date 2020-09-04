@@ -950,7 +950,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Seafloor.unity
     guid: 3a6b3c0e5f02a454b8fbedaa3b8acb0b
-  - enabled: 1
-    path: Assets/Scenes/AgilanTest/Experimental/World1_SurfaceBlur.unity
-    guid: 0dc8ea31e780ac74582666c41dacd25c
   m_configObjects: {}

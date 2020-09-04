@@ -50,6 +50,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cdbae00fb8a2bcd41b246da6730c5154, type: 2}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1684469645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -123,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 9149150542879177820, guid: 3e26e1289c89f974baea68f6e8e10241,
         type: 3}
       propertyPath: m_Name
-      value: Sardine 1
+      value: SardineFar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e26e1289c89f974baea68f6e8e10241, type: 3}

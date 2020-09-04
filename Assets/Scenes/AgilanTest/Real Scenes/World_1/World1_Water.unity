@@ -21477,8 +21477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxFov: 120
-  MaxAcceleration: 2
-  MaxVelocity: 4
+  MaxAcceleration: 0.1
+  MaxVelocity: -3
   WanderJitter: 10
   WanderRadius: 2
   WanderDistance: 3
@@ -21754,8 +21754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxFov: 120
-  MaxAcceleration: 2
-  MaxVelocity: 4
+  MaxAcceleration: 0.1
+  MaxVelocity: -3
   WanderJitter: 10
   WanderRadius: 2
   WanderDistance: 3
@@ -31918,7 +31918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1529791267
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -47151,7 +47151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &2005329614
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -59845,7 +59845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &6403779321007198216
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -74336,7 +74336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &6403779321780500084
 ParticleSystemRenderer:
   serializedVersion: 6
