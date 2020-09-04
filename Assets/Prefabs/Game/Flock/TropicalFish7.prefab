@@ -39,6 +39,37 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3dd8991f2664b24ea05764b61c9fa55,
+        type: 3}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebec613ada4105b47af6345de8cf0f01, type: 2}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 245535591
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358962258448609211, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -94,10 +125,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912873305871475722, guid: 3e26e1289c89f974baea68f6e8e10241,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 9149150542879177820, guid: 3e26e1289c89f974baea68f6e8e10241,
         type: 3}
       propertyPath: m_Name
-      value: FlockMember
+      value: TropicalFish7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e26e1289c89f974baea68f6e8e10241, type: 3}
