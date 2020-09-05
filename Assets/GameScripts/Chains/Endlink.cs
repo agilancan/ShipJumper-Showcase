@@ -80,23 +80,6 @@ public class Endlink : MonoBehaviour
                     Chain.IsConnected = true;
                 }
             }
-            else if (col.gameObject.tag == "triggerNodeAI")
-            {
-                if (Chain.ChainType == ChainType.Swapper)
-                {
-                    Chain.ExecuteEndLine();
-                    Chain.SelfDestruct();
-                    Vector2 nodePos = col.gameObject.transform.position;
-                    col.gameObject.transform.position = gameObject.transform.position;
-                    gameObject.transform.position = nodePos;
-                }
-                else
-                {
-                    ExecuteEndLine(col);
-                    Chain.IsConnected = true;
-                    col.gameObject.GetComponent<TriggerNodeAI>().ExecuteTrigger();
-                }
-            }
         }        
     }
 }
