@@ -945,9 +945,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AgilanTest/Real Scenes/World_4/World4_Seafloor.unity
     guid: ce627118e4dbe5b4095c9e033e67f770
   - enabled: 1
-    path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Surface.unity
-    guid: 14dd1ff51e38d6d49b369295b34a7333
-  - enabled: 1
     path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Seafloor.unity
     guid: 3a6b3c0e5f02a454b8fbedaa3b8acb0b
+  - enabled: 1
+    path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Surface.unity
+    guid: 7f22e0e47b0b5cb4a9e2a21ea298470f
   m_configObjects: {}
