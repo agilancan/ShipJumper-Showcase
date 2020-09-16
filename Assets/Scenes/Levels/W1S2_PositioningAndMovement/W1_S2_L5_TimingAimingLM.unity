@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e078830f8c593ec4e852d936aee33977,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +119,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -357,6 +360,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -488,17 +492,17 @@ PrefabInstance:
     - target: {fileID: 282006915679487888, guid: 8907d28d215518b42b242a6bd1cf43df,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 282006915679487888, guid: 8907d28d215518b42b242a6bd1cf43df,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 282006915679487888, guid: 8907d28d215518b42b242a6bd1cf43df,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 282006915679487889, guid: 8907d28d215518b42b242a6bd1cf43df,
         type: 3}
@@ -780,6 +784,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1076,6 +1081,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1097,8 +1103,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1647508587
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1804079993562584a80ee3f030fb2a10, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9895632, a: 1}
@@ -1318,6 +1324,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1544,6 +1551,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1702,6 +1710,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1723,8 +1732,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1647508587
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1804079993562584a80ee3f030fb2a10, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9895632, a: 1}
@@ -1831,6 +1840,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1911,6 +1921,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1932,8 +1943,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1647508587
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1804079993562584a80ee3f030fb2a10, type: 3}
   m_Color: {r: 0.5660378, g: 0.32840872, b: 0.32840872, a: 1}

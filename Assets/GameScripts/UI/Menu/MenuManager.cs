@@ -7,14 +7,19 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class LevelData
 {
+    public static Dictionary<string, LevelData> AllLevelData
+        = new Dictionary<string, LevelData>();
     public string World;
     public string Sequence;
     public string Level;
-    public LevelData(string world, string sequence, string level)
+    public string Area;
+
+    public LevelData(string world, string sequence, string level, string area)
     {
         World = world;
         Sequence = sequence;
         Level = level;
+        Area = area;
     }
 }
 
@@ -34,12 +39,16 @@ public class MenuManager : MonoBehaviour
     {
         loadWorldButtons();
         List<Dictionary<string, object>> data = CSVReader.Read("LevelData");
-        for(int i = 0; i < data.Count; i++)
+        LevelData levelData;
+        for (int i = 0; i < data.Count; i++)
         {
-            LevelDataList.Add(new LevelData(
+            levelData = new LevelData(
                 data[i]["World"].ToString(),
-                data[i]["Sequence"].ToString(), 
-                data[i]["Level"].ToString()));
+                data[i]["Sequence"].ToString(),
+                data[i]["Level"].ToString(),
+                data[i]["Area"].ToString());
+            LevelData.AllLevelData.Add(data[i]["Level"].ToString(), levelData);
+            LevelDataList.Add(levelData);
         }
     }
 

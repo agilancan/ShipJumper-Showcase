@@ -36,6 +36,7 @@ public class Chain : MonoBehaviour
     public bool IsConnected;
     public int ConnectedID;
 
+    public LineRenderer ChainLineRenderer;
     public List<GameObject> ChainLinkList = new List<GameObject>();
 
     public bool maxLineReached = false;
@@ -50,6 +51,7 @@ public class Chain : MonoBehaviour
         //LinkWidth = LinkPrefab.GetComponent<CircleCollider2D>().radius/2;
         ChainLinkList.Add(EndLink);
         Link link = EndLink.GetComponent<Link>();
+        ChainLineRenderer = GetComponent<LineRenderer>();
         link.ID = ID;
         link.Chain = this;
         link.ChainManager = ChainManager;
@@ -164,6 +166,8 @@ public class Chain : MonoBehaviour
                 ExecuteEndLine();
             }
         }
+
+        ChainLineRenderer.positionCount = ChainLinkList.Count;
     }
 
     private void FixedUpdate()
@@ -176,6 +180,11 @@ public class Chain : MonoBehaviour
             case ChainType.Swapper:
                 NormalChainUpdate();
                 break;
+        }
+
+        for(int i = 0; i < ChainLineRenderer.positionCount; i++)
+        {
+            ChainLineRenderer.SetPosition(i, ChainLinkList[i].transform.position);
         }
                 
     }
