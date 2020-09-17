@@ -30,6 +30,12 @@ public class IntervalSpawner : MonoBehaviour
     private void spawnObject()
     {
         GameObject go = Instantiate(SpawnObjectPrefab, gameObject.transform.position, Quaternion.identity);
+        // Hack for pufferfish rotation
+        if(SpawnInfo.SpawnVelocity.x > 0)
+        {
+            go.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        
         ObjectDeathTimers.Add(go, ObjectDeathTime);
         switch (SpawnType)
         {
