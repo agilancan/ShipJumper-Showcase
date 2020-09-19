@@ -5,949 +5,952 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 123ec5436722bd441b35520a15bda532
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L1_SingleChainPositioning.unity
     guid: 0663a472a39b9ac438375ede1cdb60f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L2_FallingAndSwinging.unity
     guid: 92f6a79b35f684945a162e329c55f858
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L3_HorizontalCurrent.unity
     guid: e754a2e3aaf0a304f8ac7a4c347c73d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S1_ControlsTutorial/W1_S1_L4_Riding.unity
     guid: ba3f237ba15918e4fb063afb9f41154a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L1_RopeLM.unity
     guid: 3a9f706da45b1d34eae2538e83a758eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L2_AimingLM.unity
     guid: 27d297532ce9c734bab59df695189ec1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L3_AnchorHangingLM.unity
     guid: 2a7b19eda844b0b43bcddc300cdb88df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L4_ChainCuttingTiming.unity
     guid: 9ee3d2e232a50bf4b9d1bed9f7ede112
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L5_TimingAimingLM.unity
     guid: ef3b36ca3e7e62d4892ec6cbdcafb3f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L6_ATP.unity
     guid: 93dd8c17d6ed7cd4e83032fe96af759c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S2_PositioningAndMovement/W1_S2_L7_ATPLM.unity
     guid: 3469414b54c86da4c8573752bb943f4e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L1_Obstacles.unity
     guid: 52ea85f134dfb2741ba1c6f13d77d8e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L2_TightPositioning.unity
     guid: d8caa89b2602cfa4ab7cc97caf641faa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L3_ChainCutHop.unity
     guid: 189dcc842311008429b2c9a1ffb75219
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L4_RisingHop.unity
     guid: fb02b4a9c05ab6c45b8d32bc3b916439
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L5_KeepAbove.unity
     guid: 73db8e797a29e374a917645c6f0e4f2c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L6_PrecisionCut.unity
     guid: b20018129edeeaa48b921457fa828ec7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L7_PrecisionRiding.unity
     guid: 39e0f8d3453320a43a7da6fce074cf20
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L8_EndTunnel.unity
     guid: d04af89c4ee9a2d408696f5e5c2f7ef0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S3_Hazards/W1_S3_L9_AngleTunnel.unity
     guid: f1d7664de260449448e0e405f405ae6b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L1_RiskyRise.unity
     guid: 61fa913bb90069e468c80d829d0de3be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L2_RiskyRiseV2.unity
     guid: 7bb8097774528b84a873a15de45194f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L3_SideRoadTraffic.unity
     guid: 5dddeb0515009e54a98f2c8d0e907365
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L4_FreeFall.unity
     guid: 67f649ebc5215ca45a97f8ea0797f2e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L5_SwingFall.unity
     guid: 1048edcf041f0cc459a303ebf2c8757a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L6_OneShot.unity
     guid: 4c60891317c2e394b966e1ba92828aa0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L7_OneShotV2.unity
     guid: 4277f8341a1645740876664b4e39d517
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L8_LongShot.unity
     guid: 3216e59eaf0569944a51a6f6492a5662
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L9_ZigZag.unity
     guid: fac04e62278ac8242a5fdbe10ca90ae1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L10_UnderSwing.unity
     guid: 5738afe8fd372be4685c96bfff101273
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L11_PullRelease.unity
     guid: 8d2a14d7e94c8d44ea4a36c8c62b2653
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S4_HazardsV2/W1_S4_L12_PullReleaseV2.unity
     guid: 0b3db007487f6dc4488e9b0b87c841ef
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L1_RideTransfer.unity
     guid: bc58a9a529e98f4499ed6293479450b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L2_DeathSlope.unity
     guid: 9ef05512ebfc2824ba6049fcc454b271
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L3_DeathSlopeV2.unity
     guid: 5103648e3ed8cb141848b51d72e0efdd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L4_TunnelPath.unity
     guid: 05014ec6347b34b4cb7af436f7948c24
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L5_TunnelPathV2.unity
     guid: 09ceadb93e6d17a4391497f5480dfccb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L6_NarrowFall.unity
     guid: 721efcb6472ea27438c0ddf92998c45e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L7_NarrowFallV2.unity
     guid: d636c2974cb5cff47bea7da1b0a79330
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W1S5_HazardsV3/W1_S5_L8_Dive.unity
     guid: 26e9de3b7dd9bfe419e21a20712e724d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L1_StreamRiding.unity
     guid: e04ee3e7d7549f341bd014b6e8df2ccf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L2_UpDownStream.unity
     guid: e75bc566e8981b64fa8f9103b0db9d79
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L3_DiveAndEmerge.unity
     guid: e88384fb8d2f2cc4cb326ada72e2e221
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L4_StreamControl.unity
     guid: 311c58d0e9c4ff446b194de0b7d15095
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L5_CatchStream.unity
     guid: 19937fad2110fa148a7958e6087dd7be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L6_UnderAndUp.unity
     guid: 143084c3b054f9841b07ebbe7b6f16a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L7_UpStreamHop.unity
     guid: bb69f58f1b89a4243b849d0da6d2a46c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S1_WaterStream/W2_S1_L8_SpeedStream.unity
     guid: 6db6243ecb920ec47bbaed21da9cdfab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L1_DashSwing.unity
     guid: 2fdc5f8a4d60c264e8fa88f0de35ee61
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L2_DashPositioning.unity
     guid: 46ee8d3158f7f5b46b844521f8bbe66c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L3_StreamCrissCross.unity
     guid: 5f0756a552e58fb42a51787641322c24
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L4_DashCatch.unity
     guid: 95172b4746dd7694e94868ed54ef4406
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L5_DashPositioning.unity
     guid: e8d25b5b41a18c946bffcc37c96dd343
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S2_Launcher/W2_S2_L6_StreamDash.unity
     guid: 52e87f02f171c7a4c8d5d1b07a73e134
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L1_NearEye.unity
     guid: 4ea216a4c445d6b42850fff11bb4ea34
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L2_PoolJump.unity
     guid: 9a3f0fb563bbc314a85de4269afcf4a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L3_SpeedStreamTO.unity
     guid: a94dc072b11c44245bfe44d0202446d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L4_PoolCountry.unity
     guid: 03d5a98e443feb0448deee638d70452a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L5_PoolGlide.unity
     guid: eb8b9c0c766b5814393970011a167f96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S3_WhirlPool/W2_S3_L6_StreamHighway.unity
     guid: 68116e6c4460b2f49a5b3274f3724ccd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L1_HangTime.unity
     guid: 845208ecf355580418a1e6694695379e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L2_HangTimeV2.unity
     guid: 928864c7f2959ea46b8cdd86e3d1305a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L3_PullToDash.unity
     guid: acd04800a2b7c2643b9409ca4980f5de
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L4_LaneChange.unity
     guid: 2d6858b44ceca7c4a91a6eee9e27b157
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L5_LaneChangeV2.unity
     guid: bd18074efdd86754faa9fcfabdd08113
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L6_YoYoDash.unity
     guid: d0afe6c5d55f6074799d8fab8882f341
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L7_YoYoDashV2.unity
     guid: fcf13351ea52b0549900bc5c6e65174f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L8_DashDiamond.unity
     guid: ff9e804ace7445e46b555fc4a83644a5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L9_DashDiamondV2.unity
     guid: fa0e30b0f1e004e428e5f1752aa113e0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L10_UpStreamDash.unity
     guid: d0fb3128b9cbca947b79659ed85a4854
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L11_CurveDash.unity
     guid: 24646b97f577e2b4db5fd89de9b91825
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S4_LauncherV2/W2_S4_L12_Cannon.unity
     guid: 40290d9dea126b14ca1e736818ac0fac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L1_UpStream.unity
     guid: 115ba3a5b3c97bf4b97276cda0623cc9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L2_UpStreamV2.unity
     guid: 4c7abdc233811d84cb7e5bf7814d14fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L3_SlipStreams.unity
     guid: 637507ced4570494e83198a780d91c60
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L4_SlipStreamsV2.unity
     guid: 6e9c6381c35b0f44ea869014daa00c75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L5_DownStream.unity
     guid: c9eb888626252bd4ea6d720045e2957e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L6_LaneChange.unity
     guid: ec97b536a793f704cae4407a7492a218
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L7_UTurn.unity
     guid: 596f900044c011d4e9388a5522065834
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S5_SpeedStreams/W2_S5_L8_DashReversal.unity
     guid: d28f365d0c379f6409af89ff7853d02e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L1_SideStep.unity
     guid: 2fbf8ebd1157e674abdfbd666497ce41
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L2_CollisionCourse.unity
     guid: e8d61724e6c4e2047afcfb67862a9da4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L3_CollisionAvoidance.unity
     guid: 3cb806fd077fb6b45a2392a07bb320cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L4_PoolDash.unity
     guid: 0b3b73c77f34a424ab4f3394bfdac389
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L5_PoolDashV2.unity
     guid: 9c32ef0b0b4841a45b74ca00a155d38e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L6_PoolCountryV2.unity
     guid: 01611b033ee0ac84b857846df3ac6f06
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L7_PoolsEdge.unity
     guid: 4c91e58be846cef46b6b5525a699a268
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L8_PoolsEdgeV2.unity
     guid: f67d66662c2bcc84d822a50218746b45
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L9_PoolDip.unity
     guid: c81b2f1369a895d4fafda71080518795
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W2S6_WhirlpoolV2/W2_S6_L10_PoolDipV2.unity
     guid: e3fc5da59862ec64f8588961284e174f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L1_BatteryPower.unity
     guid: a5267d48a24c4e443864b30885f3fa28
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L2_PowerRide.unity
     guid: f6580365c41ad684588ec191337e560e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L3_StreamPower.unity
     guid: 237e68cec3a743f4cb51ee1111c8db1f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L4_Calculations.unity
     guid: 13322262098dd77469f4d1a628b58d88
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L5_PowerLM.unity
     guid: 9a7b8d2d64693cc49b94c14be5fe5422
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L6_ElevatorUp.unity
     guid: 58c4667783c98484fb64cd2cbc2bfef7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L7_HangShot.unity
     guid: 67a09544976d3754488c0767483765a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S1_Battery/W3_S1_L8_PowerSwing.unity
     guid: 2d454d5f6b05adc4a970aef553251fab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L1_PowerPoolSwitch.unity
     guid: 7346b7cdaaa94154f8aeb5c29ff626c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L2_OverAndOut.unity
     guid: ec227674ba0af464a9b719a17bb42377
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L3_StreamBoundry.unity
     guid: e860d2572665729408be4d6570026a70
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L4_PoolDashPower.unity
     guid: d8de653011a815e4db4c102fece5df33
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L5_ManualPool.unity
     guid: efa18f5987dc94a4c97c226abe88c868
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L6_PoolPowerRP.unity
     guid: 382e008d183c1ce45b3a277b1cd03939
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S2_PowerWhirlPool/W3_S2_L7_MegaPools.unity
     guid: 19acff3cfa4f52243974849b80bbffce
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S3_MobileBattery/W3_S3_L1_PowerTransfer.unity
     guid: 04835c07ac955b54295a178efea52e3e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S3_MobileBattery/W3_S3_L2_PowerYourRide.unity
     guid: 98cec351ac3e9e548a20229ef73cfb30
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S3_MobileBattery/W3_S3_L3_PowerPoolPull.unity
     guid: a54c7d4662c3b9b4cb78beda1157f369
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S3_MobileBattery/W3_S3_L4_PowerTracking.unity
     guid: 68f0d6ca48fa6064698c9a2145ebcd3b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S3_MobileBattery/W3_S3_L5_StayLow.unity
     guid: 03a96d565f850a84892431871e08f797
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L1_360.unity
     guid: dd57f364677f1a34c850d86a8d78c6b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L2_360V2.unity
     guid: b018746fa30c9c349b3ce724cd7e8d6e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L3_360Stream.unity
     guid: 8a9fc9c848e593543b08df9eb8d452db
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L4_360StreamV2.unity
     guid: c2148d9fcde02384b96458e7e561d954
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L5_Balance.unity
     guid: bd19f8c92205c9a40b34b33b682259e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L6_BalanceV2.unity
     guid: 2b35087f9fd3c254493adfcab30088bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L7_WeighDown.unity
     guid: ea97cad95c604f741a3d4602f7449302
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L8_HangOn.unity
     guid: 4345401ac86194a478fe769fbe1b5141
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L9_PowerPoolXL.unity
     guid: e1faf0d3b3810734a94c57f549315b2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L10_PowerPoolXLV2.unity
     guid: 4f0ce80952ae9784cb909521d14093f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L11_SlopeStretch.unity
     guid: 3a682838bb1fbe64e9902922a8f057f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S4_BatteryPower/W3_S4_L12_SlopeStretchV2.unity
     guid: 9f9ebbaf9aad0e8458af5be1b866c535
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L1_StreamRotation.unity
     guid: a33d634d75e321a4a89f9e02c0480cc7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L2_DeathCurve.unity
     guid: 7c1cd1a0eb894ca468fdfb3b65cb468d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L3_DeathCurveV2.unity
     guid: ee282d8d2b6a49b409ec2633e8bd94bd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L4_GrabAndGo.unity
     guid: 82aa05975a73f52448dd2d19591994d6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L5_PowerLift.unity
     guid: 3f1f4de18f7e0074893f473973ad3de7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L6_PoolConstruction.unity
     guid: e0eabcc5d7306c547901cd49f226fb35
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L7_TunnelBalance.unity
     guid: f9b6b0ddde1040d49abd71b309010ceb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S5_BatteryPowerV2/W3_S5_L8_HangOnV2.unity
     guid: 786f802060eae914baf839d0c2188cbf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L1_VShape.unity
     guid: 6f73de0b8c2d49f4fb66ad607ce3d484
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L2_VShapeV2.unity
     guid: 8e69f9b7f1a5fd7428f1e77dae36e497
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L3_BatteryControl.unity
     guid: 0bf8f976c3f80d84e9667f14066cc93c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L4_BatteryControlV2.unity
     guid: e7164b2b23461534e80aef57774b27be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L5_BatteryControlV3.unity
     guid: 31b36c7cc50bc82429c22ab93fff63c6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L6_DualPoolPower.unity
     guid: 0f9e84d602ebb7542b5a17691d91ccb8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L7_DualPoolPowerV2.unity
     guid: 5a3f788fdfa1394408dd0f158d687664
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L8_DualPoolPowerV3.unity
     guid: 66c077918855d5a4dbc28aa15b014f2a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L9_LaunchPower.unity
     guid: 543b73f1d371e724da4b77e8e66aab26
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L10_LaunchPowerV2.unity
     guid: db562c4bdb773a047834f06ca46b912d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L11_CleanSweep.unity
     guid: 0c2e0bb7ccbcc084b8b4cc62ef5f3963
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S6_BatteryPowerV3/W3_S6_L12_CleanSweepStream.unity
     guid: 8abf860b2f1c0d24b932da1c5d179e22
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L1_TurbulantPowerRide.unity
     guid: dca3725f5691bcb4a9a9dd34c3f0542b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L2_PowerCircle.unity
     guid: b8d710d45436c08438849137bd4e8858
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L3_PowerCircleV2.unity
     guid: 71e79e39a122735459819d8098cc0e30
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L4_DrainCage.unity
     guid: a823dd7ca929c3342b54aca75c654b0d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L5_DrainCageV2.unity
     guid: 4d27bffed45f5554cb2cae853f498ece
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L6_DrainCageV3.unity
     guid: d46a3d2825e0f1d438397987a5eca3c6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L7_OppositePowers.unity
     guid: ec10f822763472544bd4239b773a475d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W3S7_PowerWhirlpoolV2/W3_S7_L8_OppositePowersV2.unity
     guid: 1670c495659f1fc4a939e948bce66141
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L1_SharkManipulation.unity
     guid: 9572d64dab81ba94f9dd9934a69385c6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L2_SharkManipulationV2.unity
     guid: 9f59db57c7103e44bb462ffb559e4fd8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L3_SharkTraffic.unity
     guid: c5ade137f67b57a41b66a992a047231d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L4_SharkDodge.unity
     guid: 96c692e185fd9424585cdfa05f3899eb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L5_SharkBalance.unity
     guid: 080047257c33f7b4d9b1099394428f7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L6_DodgeTiming.unity
     guid: b0ec55f66bd9e8f42b4e5f28f2f6a9ef
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L7_DodgeTimingV2.unity
     guid: 5cbf8bf9b279fa4409033838d5682008
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L8_SharkRace.unity
     guid: 7009c7c7be7c784448261e1c18ec4b75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L9_RoughPath.unity
     guid: 83455524565a2b9498734088880b20b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L10_RoughPathV2.unity
     guid: 732bcb1ccd8415e4c8b3e7833c71270c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L11_RoughWaters.unity
     guid: 6547618e2270b5d4f82a7072c1588416
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S1_PowerShark/W4_S1_L12_RoughWatersV2.unity
     guid: daa096c9fec03b544b05d5f95be7f9bd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L1_StayPowered.unity
     guid: dbe54cc11d00bc54f949f3dfc445336e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L2_StayPoweredV2.unity
     guid: 7def0fce16791374b8e15d3c23e61ec3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L3_SharkControl.unity
     guid: a9df11a7ed4afb640908e50f8caeb246
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L4_SharkControlV2.unity
     guid: c1fec550508d1eb46a406e97b5d0f060
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L5_LifeLine.unity
     guid: c1822b3d2e9beeb49a346760113b758a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L6_LifeLineV2.unity
     guid: 5f1f42b51cbaa464e824f105a774b1fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L7_RoughStream.unity
     guid: 03e50f9928f8d634cbcb3c05256ff5ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S2_Shark/W4_S2_L8_RoughStreamV2.unity
     guid: dad372038db608943b6eb7eedc440aa0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L1_SharkAngle.unity
     guid: 930b31df8f6d85c4bb682da9715b5c75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L2_DangerRide.unity
     guid: 2c480d900edd5c34d9252f7a771884ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L3_DangerRideV2.unity
     guid: b5b5260f1c32616438bf0f9f766a806f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L4_DangerRideV3.unity
     guid: d54c32dc004107845b114609bcc3517d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L5_PowerPet.unity
     guid: fd1e56956901f9e43b50edb27daddbc6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L6_PowerPetV2.unity
     guid: 0f20f15dd2fcda04795ac2cdd93e9c4e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L7_PowerPetV3.unity
     guid: 0343e523f9b8da84c9d9c3397fbe149a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L8_PowerBalance.unity
     guid: 2494f8b8025ae984a8dd52a4d30b1b0c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L9_PowerBalanceV2.unity
     guid: f163a2384f1702741b06f9f29a325e13
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L10_PowerBalanceV3.unity
     guid: 6175f9cd683d9114dad4894e641c2889
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L11_CreepingBehind.unity
     guid: 27318fdbd0af9c34684c6437c4a6b5d4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S3_PowerSharkV2/W4_S3_L12_CreepingBehindV2.unity
     guid: ab6016a03ccdc274dac1d55240343bf8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L1_SharkDash.unity
     guid: bbce516f693cbbf4ca11706f3b8c1782
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L2_SharkDashV2.unity
     guid: bc8e93f08b5bb354c8142bbed49e60f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L3_SharkDashV3.unity
     guid: b3f60c20959be654f97565a2ef0e9c03
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L4_ClockwiseFreeze.unity
     guid: a34147cbaf0da2b40b029b1f525c4e5c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L5_ClockwiseBalance.unity
     guid: 3fcfc5b6f2afe2245817d078e91f3540
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L6_ClockwiseDash.unity
     guid: e6239805930d36147ad17e04d7ad9fbc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L7_RapidDash.unity
     guid: 76d2cf873ff561b448481de91be61ce1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L8_RapidDashV2.unity
     guid: ec72059894b4b974f8bcae8853ab1047
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L9_FunnelChase.unity
     guid: b332a9b203d842541bf359471d6df376
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L10_FunnelChaseV2.unity
     guid: 075e4d4b04ce80840a715d74a2f8cfc6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L11_FunnelAngle.unity
     guid: 53838c44872b8b54da8e6affdc66da48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S4_SharkV2/W4_S4_L12_DeadlyCatch.unity
     guid: 6dbc81a029ee3fa47bac3f0225d7bb9f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L1_PowerRace.unity
     guid: 6963ad0891bc8384cb92c1bd72d7797b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L2_StreamPowerCurve.unity
     guid: 52c0b54d9da46cb4380a973a63b5fae9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L3_StreamPowerCurveV2.unity
     guid: 9abac0bfc1232c84abf88e331042e389
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L4_PowerGang.unity
     guid: 5c9002904f8331a439a172420e16a468
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L5_PowerGangV2.unity
     guid: 2e4320f76c742b1488f2b6f716e20bb6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L6_DareDevil.unity
     guid: ad1209707402fe84ca05be67ad8bc428
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L7_PowerGangV3.unity
     guid: b8c89af3ce932384d9ee7161e5b70730
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S5_PowerSharkV3/W4_S5_L8_UpStreamTime.unity
     guid: d38f997d253c13c4ea00b0e2dce6c38a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L1_Pendulum.unity
     guid: fad9283a0d8fe1344ad8f701d52348a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L2_PendulumV2.unity
     guid: d1168e714dce1934b913d026fdf10f99
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L3_PoolChase.unity
     guid: ed9abf321f0e8a940a22cf8ca7441656
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L4_KeepAway.unity
     guid: 32b7269f1786d1448a1fb9ca9099b35a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L5_DashStep.unity
     guid: 2741aa84028012c439fd8cbca3d2bf8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L6_SharkStep.unity
     guid: dd608fed136eb1e448f7d67cf8c7619b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L7_SharkCave.unity
     guid: 72043f738e094ba4086552cd5d4deb16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S6_SharkV3/W4_S6_L8_SharkCaveV2.unity
     guid: 222ba8a126ec162498d00a8e8b9dd268
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L1_PowerPursuit.unity
     guid: 9f401e737bc50fb48b0917397b49bf84
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L2_KeepPower.unity
     guid: b8b0d89606b9bcc488db6e4be857560b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L3_PowerPursuitV2.unity
     guid: f3452df99b4ba164f95cb0364c9d8b73
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L4_KeepPowerV2.unity
     guid: 90fd897fd4f53a64c9282088cb8b0194
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L5_StreamRun.unity
     guid: 42159a77aca97e54b9e3d98d98feb985
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L6_SpeedRun.unity
     guid: 07704fd29dc851346ba5b1d676e26661
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L7_SpeedRunV2.unity
     guid: 2e46a5bca4a6e744f9a6425c825cf380
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L8_SpeedRunV3.unity
     guid: 635bc6db61c909e4d926925513629975
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L9_DownForce.unity
     guid: 9451f3995a05c37438bd00e2ba39f1a8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W4S7_SharkGroups/W4_S7_L10_FreeFallChase.unity
     guid: e24a22125e794aa439b37ebca11b04af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L1_SwapperTutorial.unity
     guid: 1f8cbec29863aed418ce9ffdaaea58cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L2_SharkEvasion.unity
     guid: 5aa90fb74b416114e974c5dbe9894662
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L3_SharkEvasionV2.unity
     guid: 2d1946f5c0f72e548b3adfa893d8be8c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L4_SharkEvasionV3.unity
     guid: 5c92010edffb1504dbd5b83fc4acc5c7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L5_SharkEvasionV4.unity
     guid: 96e4d6f670775e54ba933f07e5f8c7b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L6_SharkEvasionV5.unity
     guid: b21675e7b28b47c4688311eb187b8e6d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L7_PetShark.unity
     guid: 11557b0f8467d44408262a6be432ba13
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L8_PetSharkV2.unity
     guid: 4e05beb8cf5b583429cd59918537c24e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L9_RideSwap.unity
     guid: d122f06de09038c4a990493345fcfbbc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L10_RideSwapV2.unity
     guid: f067e5858ce122948888ba98d2d63e9a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L11_PoolChaos.unity
     guid: f66373eac79fb0a4491e8680af7ebbc2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S1_Swapper/W5_S1_L12_DeathGrid.unity
     guid: 72756c5810a9a0146b4357deb4de8c37
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L1_Opposites.unity
     guid: 4c3ab29cdd23086459f5070a4ca6e2a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L2_OppositesV2.unity
     guid: c4cae41af2aca0642bb058743a2e57f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L3_OppositesV3.unity
     guid: 966c230bcd2298941bde8372f5b106f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L4_OppositesV4.unity
     guid: 6f3248c0e9f6ead4d91c200bbdeb2a3f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L5_PowerHungry.unity
     guid: edcb65db39cb6c640b47ac5c46dc61fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L6_PowerHungryV2.unity
     guid: 2d3afee4160581b4cbf0598e146866ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L7_DoubleTrouble.unity
     guid: 551f41faa6d10f24f920ce7b1381efd4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S2_TwinShark/W5_S2_L8_DoubleTroubleV2.unity
     guid: 70bc92c54916171408c00efc7fb058e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L1_DashClock.unity
     guid: 458e3d42abec9e9499454373ca4deb77
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L2_HeadFirst.unity
     guid: 2955864838ba73a47821ef945d456800
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L3_RapidMoves.unity
     guid: a2629434322f7a74db95c1092278a83e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L4_RapidMovesV2.unity
     guid: 5f26d35a84d70ee4f972665efb216582
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L5_RapidMovesV3.unity
     guid: 8f9b79426daf6c6419a553ace792e1d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L6_RapidMovesV4.unity
     guid: 7f4cf50ab26e94f4e943672ddb09b30b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L7_SharkMine.unity
     guid: 1fb6b90ebdd226c43800235b3af6cf8f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L8_SharkMineV2.unity
     guid: 8ae7218eaa938f6439b5eae267eac337
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L9_SharkMineV3.unity
     guid: 4e351da893a99194ba2073fd6a8365be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L10_TwinStream.unity
     guid: 6822e11b2cb1188489cf16c69afe5fc0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L11_TwinStreamV2.unity
     guid: 72655734081b7a04eacfe77b01cc8f79
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S3_TwinSharkV2Launchers/W5_S3_L12_StreamSlope.unity
     guid: 2aad5763152553441929e91b88ffdbe2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L1_ClosingIn.unity
     guid: a4ecfdf76d66eed49a9b715ccd4b85f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L2_ClosingInV2.unity
     guid: 88daf53897d008044a8f285f40c2b60b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L3_ClosingInV3.unity
     guid: 6d40b76191012c542bafc64b5faa43ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L4_SharkPuzzle.unity
     guid: e34a829b1424db84bbbfcb5ee01d6341
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L5_SharkPuzzleV2.unity
     guid: 805fdcd6f7cea0b4291b4a88840df99f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L6_SharkPuzzleV3.unity
     guid: d62779704e49ab14ea461def0a9172bc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L7_NearDeath.unity
     guid: 591dd4a59635d3a4c92a5890ff76e303
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L8_NearDeathV2.unity
     guid: c91cbe1dcb738884383d4141aa6754bb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L9_NearDeathV3.unity
     guid: 0f3f3563a8e54c14cac91c9ae26e2049
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L10_NearDeathV4.unity
     guid: 629cb320c51497249b88b5bab44f23be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L11_NearDeathV5.unity
     guid: afbaccc5f488d9b4cafd4bf04c6607f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S4_SwapperV2/W5_S4_L12_NearDeathV6.unity
     guid: a07244853d38e394ea9631f01ec4c9b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L1_PowerMine.unity
     guid: e377074539ca4ab44ba118d595d9ad33
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L2_PowerMineV2.unity
     guid: 8fbaede57aefadf40bd7b906903bc697
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L3_PowerMineV3.unity
     guid: 75174a002de0e4141a7a47f8f9bcfd47
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L4_PowerMineV4.unity
     guid: cf926a1abaea05046bfd6bf629b1c4f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L5_SwapMine.unity
     guid: 4f52fb207fe2922438bf5386f647afec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L6_SwapMineV2.unity
     guid: f5dbd13694bf5104eb58bd221cbe2307
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L7_SwapMineV3.unity
     guid: ff460c77d73714949b7fa91047f3bbb2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L8_SwapMineV4.unity
     guid: 775e3de32a9595141b850d240d0fc7f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L9_ShiftingMine.unity
     guid: 4985867c8c04efb4d9ee923e2ac0c4cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L10_ShiftingMineV2.unity
     guid: 53676356e7f9eee4b80a2ae5757b65b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L11_ShiftingMineV3.unity
     guid: c866bc2a9f88f434bb35189c6cb2ab55
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S5_Minefield/W5_S5_L12_ShiftingMineV4.unity
     guid: 7dc58ab09154cb74fb3081f74b223ea9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L1_SharkStretch.unity
     guid: 1e5330c7a6b539541ab7134bef6b8658
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L2_SharkStretchV2.unity
     guid: 1497689aa7166f54d9cb326d4f4d93ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L3_SharkStretchV3.unity
     guid: 155a143c6fb23ef408ce20dacc17eee5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L4_SharkStretchV4.unity
     guid: 2ebc6bccf98da8a4db9725201e903c15
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L5_SharkStretchv5.unity
     guid: 907a3b005f2d8154fa6bf90cba401736
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L6_SharkStretchV6.unity
     guid: 249757e683e820445a04cebe089b3980
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L7_SharkStretchV7.unity
     guid: 9108db10feb9e994c9bfd2555093b1a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L8_SharkStretchV8.unity
     guid: d9483c77655f84c448ca826d33dd0209
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L9_SharkStretchV9.unity
     guid: 5a9196da31321e84fa12a7b2cb57139d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L10_SharkStretchV10.unity
     guid: 941bf2784693171429f9e2860fe958f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L11_SharkStretchV11.unity
     guid: dad6640f2af5f4b4288475fb0248622c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S6_TwinSharkV3/W5_S6_L12_SharkStretchV12.unity
     guid: ad9de34ff6e24e94ebc6d4cde699e502
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L1_AttractionBalance.unity
     guid: 402b68c6b770be64baecd3acdfed126e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L2_AttractionBalanceV2.unity
     guid: 7a67c9075cf1cfd4c88110697df1d23d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L3_AttractionBalanceV3.unity
     guid: a3c85838b43f1f44a802f5ffc06559c1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L4_AttractionBalanceV4.unity
     guid: 0e8eb6e23f1b8d34fb019e161244d646
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L5_MineChase.unity
     guid: 7155f7abaf9e71541964ff6b435a996a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L6_MineChaseV2.unity
     guid: 24e559c3814233743bab5becfe0543ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L7_MineChaseV3.unity
     guid: d288d64f199e64643bbbfdf8b4f2d22c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L8_MineChaseV4.unity
     guid: cad7e26092951f148a845a9e2436d172
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L9_Chaos.unity
     guid: 52712ef049697d140bdcb04fc5264f91
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L10_ChaosV2.unity
     guid: 1777330aa6e9d814e816064daf318c64
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L11_ChaosV3.unity
     guid: 7450b05134d39314ba8d3e1af0e18a04
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/W5S7_TwinSharkV4/W5_S7_L12_ChaosV4.unity
     guid: 1e9735205b7564f4d885f3ea30d773ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_1/World1_Seafloor.unity
     guid: 24dbb8f7cb1452f42927ddd3ec4bcdaf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_1/World1_Surface.unity
     guid: a78a18eec6b464b47a248d2ef2c7d7ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_1/World1_Water.unity
     guid: 2a61611acb20cb247b1f964459ad6845
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_2/World2_Seafloor.unity
     guid: 2cee8ed8118ef42419281432074a8ef5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_2/World2_Surface.unity
     guid: 1c2800633fdd4694b90aa20a4de29d77
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_2/World2_Water.unity
     guid: badc508ae9b2c7245b9caaaf44f608e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_3/World3_Seafloor.unity
     guid: a08931f3cfcd58a42992f1ee533c4389
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_3/World3_Surface.unity
     guid: 50000b76984d10741bca9d92de6bb696
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_3/World3_Water.unity
     guid: 003198d4ad1d05e4798c1925fb090ae4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_4/World4_Surface.unity
     guid: 95dfa086a6e09b548abc44f335e2fca1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_4/World4_Water.unity
     guid: eb517d9af74ff6748be1e7040546a1b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_4/World4_Seafloor.unity
     guid: ce627118e4dbe5b4095c9e033e67f770
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Seafloor.unity
     guid: 3a6b3c0e5f02a454b8fbedaa3b8acb0b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AgilanTest/Real Scenes/World_5/World5_Surface.unity
     guid: 7f22e0e47b0b5cb4a9e2a21ea298470f
+  - enabled: 1
+    path: Assets/UI/UIScene.unity
+    guid: b8b9d2ebffcada94689b80010a0027ef
   m_configObjects: {}
