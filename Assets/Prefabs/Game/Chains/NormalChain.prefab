@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8883454583938140901}
   - component: {fileID: 8883454583938140906}
   - component: {fileID: 8883454583938140907}
+  - component: {fileID: -2674377939125664817}
   m_Layer: 0
   m_Name: NormalChain
   m_TagString: Untagged
@@ -67,18 +68,159 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChainType: 0
+  ChainStatus:
+    IsPowered: 0
   ChainManager: {fileID: 0}
   LinkPrefab: {fileID: 1773010107765866097, guid: c6a261167715c304ca13e0e1576de212,
     type: 3}
   EndLink: {fileID: 8883454584407993112}
+  StartLink: {fileID: 0}
+  SecondLink: {fileID: 0}
   PrevLink: {fileID: 0}
   NewLinkSpawn: {fileID: 0}
   LinkWidth: 0.1
   LineDistance: 0
   MaxLineDistance: 10
+  IsConnected: 0
+  ConnectedID: 0
+  ChainLineRenderer: {fileID: 0}
   ChainLinkList: []
   maxLineReached: 0
   ID: 0
+--- !u!120 &-2674377939125664817
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883454583938140900}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1647508587
+  m_SortingLayer: 3
+  m_SortingOrder: 3
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.2136718
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.28102392
+        value: 0.36752188
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.46691465
+        value: 0.4037199
+        inSlope: -0.20844351
+        outSlope: -0.20844351
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.74460655
+        value: 0.47587454
+        inSlope: 0.059592176
+        outSlope: 0.059592176
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.82529396
+      - serializedVersion: 3
+        time: 1
+        value: 0.5641066
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 10
+    alignment: 0
+    textureMode: 1
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
 --- !u!1 &8883454584407993112
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +271,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -240,6 +384,7 @@ MonoBehaviour:
   FirstLink: {fileID: 8883454584407993112}
   Chain: {fileID: 8883454583938140907}
   type: 0
+  AnchorObject: {fileID: 0}
 --- !u!114 &309968061730626368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,3 +399,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChainManager: {fileID: 0}
   ID: 0
+  Chain: {fileID: 0}

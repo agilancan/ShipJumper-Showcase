@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject PauseMenu;
     public GameObject RestartButton;
     public GameObject WinObject;
     public GameObject RestartButtonEnd;

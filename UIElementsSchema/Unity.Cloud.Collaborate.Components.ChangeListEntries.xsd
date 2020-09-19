@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Rendering.LookDev" elementFormDefault="qualified" targetNamespace="Unity.Cloud.Collaborate.Components.ChangeListEntries" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+=======
 <xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Experimental.GraphView" elementFormDefault="qualified" targetNamespace="Unity.Cloud.Collaborate.Components.ChangeListEntries" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
   <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
   <xs:complexType name="BaseChangeListElementType">
     <xs:complexContent mixed="false">

@@ -16,6 +16,7 @@ public class Goal : MonoBehaviour
         SR = gameObject.GetComponent<SpriteRenderer>();
         gameManager = FindObjectOfType<GameManager>();
         gameManager.Goals.Add(this);
+        SR.sortingLayerName = "Player";
         if (IsEndGoal)
         {
             SR.color = Color.magenta;

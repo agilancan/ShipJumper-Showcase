@@ -212,8 +212,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1647508587
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1804079993562584a80ee3f030fb2a10, type: 3}
   m_Color: {r: 1, g: 0.6084906, b: 0.6084906, a: 1}
@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 5720223565748420053}
   - component: {fileID: 8242649296476232428}
   - component: {fileID: 2788092124026809624}
+  - component: {fileID: 3396152905490882030}
   m_Layer: 0
   m_Name: GameEngine
   m_TagString: Untagged
@@ -383,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016f4fa9276761c4b8c2f2e58f6f2143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SingleTapWaitTime: 0.1
 --- !u!114 &883545290161797554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,3 +449,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SharkAttractorList: []
   ActiveSharkAttractor: {fileID: 0}
+--- !u!114 &3396152905490882030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8511021271897778988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2211b9832b62943ba7b0e68eb04f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Areas:
+  - Name: A1_Surface
+    Prefab: {fileID: 4791695057665670847, guid: 4fda8f776753731428b603d501ed6de7,
+      type: 3}
+  - Name: A1_Water
+    Prefab: {fileID: 5336272068454346287, guid: 2c8ad3091fd84d64a8c29f0af00b0713,
+      type: 3}
+  - Name: A1_Seafloor
+    Prefab: {fileID: 237252745712093421, guid: 75de0634e735bd44dbfa0e5520c9fd93, type: 3}
+  - Name: A2_Surface
+    Prefab: {fileID: 2943806381116340575, guid: bdedcfa36c4255a4c99a6186780b129d,
+      type: 3}
+  - Name: A2_Water
+    Prefab: {fileID: 6718813282808514696, guid: 583605b65b3672049bdc126f8bf896ab,
+      type: 3}
+  - Name: A2_Seafloor
+    Prefab: {fileID: 8188979399443289250, guid: cb44256572ddc954389ea346b431c098,
+      type: 3}
+  - Name: A3_Surface
+    Prefab: {fileID: 4756249592324673301, guid: ef7ca6c2549c1f94c8d925a1fb77f433,
+      type: 3}
+  - Name: A3_Water
+    Prefab: {fileID: 7079063783867131683, guid: 5076a621a46fb7b409e1afa8ddb21bf4,
+      type: 3}
+  - Name: A3_Seafloor
+    Prefab: {fileID: 5521858456588211513, guid: 985e053b382144e4e9cc5224fdce004f,
+      type: 3}
+  - Name: A4_Surface
+    Prefab: {fileID: 2824610543738454535, guid: 9f77772f547d4e7438282f3ce353a144,
+      type: 3}
+  - Name: A4_Water
+    Prefab: {fileID: 9073027933593718672, guid: 328cfce6abba6ec4bb658028ccc63af4,
+      type: 3}
+  - Name: A4_Seafloor
+    Prefab: {fileID: 2727344965797866818, guid: 9b95378b56f3c4f48aead9fc43bceaf5,
+      type: 3}
+  - Name: A5_Seafloor
+    Prefab: {fileID: 6396948118208097653, guid: 217b596251d677a43a345692dd90d68f,
+      type: 3}
+  - Name: A5_Surface
+    Prefab: {fileID: 6517073210128039803, guid: 842420b307a53af4a804c980a4f68079,
+      type: 3}

@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Rendering.LookDev" elementFormDefault="qualified" targetNamespace="UnityEngine.UIElements" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+=======
 <xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Experimental.GraphView" elementFormDefault="qualified" targetNamespace="UnityEngine.UIElements" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
   <xs:complexType name="UXMLType">
     <xs:complexContent mixed="false">
       <xs:restriction base="xs:anyType">
@@ -98,7 +102,10 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
@@ -119,7 +126,10 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:attribute default="0" name="delay" type="xs:long" use="optional" />
         <xs:attribute default="0" name="interval" type="xs:long" use="optional" />
         <xs:anyAttribute processContents="lax" />
@@ -226,7 +236,10 @@
         <xs:attribute default="0" name="low-value" type="xs:float" use="optional" />
         <xs:attribute default="10" name="high-value" type="xs:float" use="optional" />
         <xs:attribute default="0" name="page-size" type="xs:float" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="show-input-field" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:attribute default="Horizontal" name="direction" type="engine:Slider_direction_Type" use="optional" />
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
@@ -261,7 +274,10 @@
         <xs:attribute default="0" name="low-value" type="xs:int" use="optional" />
         <xs:attribute default="10" name="high-value" type="xs:int" use="optional" />
         <xs:attribute default="0" name="page-size" type="xs:int" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="show-input-field" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:attribute default="Horizontal" name="direction" type="engine:SliderInt_direction_Type" use="optional" />
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
@@ -440,7 +456,10 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
@@ -480,12 +499,17 @@
         <xs:attribute default="None" name="show-alternating-row-backgrounds" type="engine:ListView_show-alternating-row-backgrounds_Type" use="optional" />
         <xs:attribute default="false" name="reorderable" type="xs:boolean" use="optional" />
         <xs:attribute default="true" name="show-bound-collection-size" type="xs:boolean" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="horizontal-scrolling" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="ListView" substitutionGroup="engine:VisualElement" type="engine:ListViewType" />
+<<<<<<< HEAD
+=======
   <xs:simpleType name="TwoPaneSplitView_orientation_Type">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Horizontal" />
@@ -513,6 +537,7 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="TwoPaneSplitView" substitutionGroup="engine:VisualElement" type="engine:TwoPaneSplitViewType" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
   <xs:simpleType name="TreeView_selection-type_Type">
     <xs:restriction base="xs:string">
       <xs:enumeration value="None" />
@@ -610,7 +635,10 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
@@ -662,7 +690,10 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
+<<<<<<< HEAD
+=======
         <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+>>>>>>> b337c5a3efe52f23c24965e0aee34fd7dca8a033
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
