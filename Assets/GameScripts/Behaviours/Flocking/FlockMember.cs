@@ -28,7 +28,7 @@ public class FlockMember : MonoBehaviour
         Acceleration = Vector3.ClampMagnitude(Acceleration, Config.MaxAcceleration);
         Velocity = Velocity + Acceleration * Time.deltaTime;
         Velocity = Vector3.ClampMagnitude(Velocity, Config.MaxVelocity);
-        transform.rotation = Quaternion.LookRotation(Velocity);
+        //transform.rotation = Quaternion.LookRotation(Velocity);
         Position = Position + Velocity * Time.deltaTime;
         wrapAround(ref Position, -FlockManager.Bounds, FlockManager.Bounds);
         transform.position = Position;

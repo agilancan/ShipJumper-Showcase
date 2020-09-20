@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-
 public class MainMenuWorld : EditorWindow
 {
     [MenuItem("Window/Project/MainMenuWorld")]

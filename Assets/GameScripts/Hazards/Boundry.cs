@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boundry : MonoBehaviour
 {
+    public bool ScreenEdgeObject = true;
     public GameManager gameManager;
 
     private void Awake()

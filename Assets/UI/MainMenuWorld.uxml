@@ -1,43 +1,45 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Main-scr" style="height: 1000px; background-color: rgba(197, 197, 197, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
-        <ui:VisualElement name="TabsContainer" style="flex-direction: row; justify-content: center; background-color: rgba(0, 0, 0, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
-            <ui:Button text="GLOBAL" display-tooltip-when-elided="True" name="Global-btn" style="font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(24, 24, 24, 0.17); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-left-color: rgba(24, 24, 24, 0); border-right-color: rgba(24, 24, 24, 0); border-top-color: rgba(24, 24, 24, 0); border-bottom-color: rgba(24, 24, 24, 0); -unity-font-style: bold; margin-top: 10px; margin-left: 3px; padding-left: 10px; padding-right: 10px;" />
-            <ui:Button text="CANADA" display-tooltip-when-elided="True" name="Canada-btn" style="font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(24, 24, 24, 0.17); border-left-color: rgba(24, 24, 24, 0); border-right-color: rgba(24, 24, 24, 0); border-top-color: rgba(24, 24, 24, 0); border-bottom-color: rgba(24, 24, 24, 0); -unity-font-style: bold; margin-top: 10px; padding-left: 10px; padding-right: 10px;" />
-            <ui:Button text="YOU" display-tooltip-when-elided="True" name="You-btn" style="font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(24, 24, 24, 0.17); border-left-color: rgba(24, 24, 24, 0); border-right-color: rgba(24, 24, 24, 0); border-top-color: rgba(24, 24, 24, 0); border-bottom-color: rgba(24, 24, 24, 0); -unity-font-style: bold; margin-top: 10px; padding-left: 10px; padding-right: 10px;" />
-            <ui:Button text="RIVALS" display-tooltip-when-elided="True" name="Rivals-btn" style="font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(24, 24, 24, 0.17); border-left-color: rgba(24, 24, 24, 0); border-right-color: rgba(24, 24, 24, 0); border-top-color: rgba(24, 24, 24, 0); border-bottom-color: rgba(24, 24, 24, 0); -unity-font-style: bold; margin-top: 10px; padding-left: 10px; padding-right: 10px;" />
-            <ui:Button text="FRIENDS" display-tooltip-when-elided="True" name="Friends-btn" style="font-size: 40px; color: rgb(255, 255, 255); background-color: rgba(24, 24, 24, 0.17); border-left-color: rgba(24, 24, 24, 0); border-right-color: rgba(24, 24, 24, 0); border-top-color: rgba(24, 24, 24, 0); border-bottom-color: rgba(24, 24, 24, 0); -unity-font-style: bold; margin-top: 10px; padding-left: 10px; padding-right: 10px;" />
+    <ui:VisualElement name="Main-scr">
+        <Style src="MainMenuWorld.uss" />
+        <ui:VisualElement name="TabsContainer">
+            <ui:Button text="GLOBAL" display-tooltip-when-elided="True" name="Global-btn" />
+            <ui:Button text="CANADA" display-tooltip-when-elided="True" name="Canada-btn" />
+            <ui:Button text="YOU" display-tooltip-when-elided="True" name="You-btn" />
+            <ui:Button text="RIVALS" display-tooltip-when-elided="True" name="Rivals-btn" />
+            <ui:Button text="FRIENDS" display-tooltip-when-elided="True" name="Friends-btn" />
         </ui:VisualElement>
-        <ui:VisualElement name="UserChecklist" style="justify-content: flex-start; align-items: center; background-color: rgba(0, 0, 0, 0); -unity-font-style: bold; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); margin-top: 25px;">
-            <ui:Label text="YOUR CHECKLIST" display-tooltip-when-elided="True" name="YourChecklist-txt" style="font-size: 30px; color: rgb(0, 0, 0);" />
-            <ui:Label text="-Collect your first orb" display-tooltip-when-elided="True" name="Task1-txt" style="font-size: 30px; color: rgb(0, 0, 0);" />
-            <ui:Label text="-Beat a friend&apos;s score" display-tooltip-when-elided="True" name="Task2-txt" style="font-size: 30px; color: rgb(0, 0, 0);" />
-            <ui:Label text="-Beat world 1" display-tooltip-when-elided="True" name="Task3-txt" style="font-size: 30px; color: rgb(0, 0, 0);" />
+        <ui:VisualElement name="UserChecklist">
+            <ui:Label text="YOUR CHECKLIST" display-tooltip-when-elided="True" name="YourChecklist-txt" />
+            <ui:Label text="-Collect your first orb" display-tooltip-when-elided="True" name="Task1-txt" />
+            <ui:Label text="-Beat a friend&apos;s score" display-tooltip-when-elided="True" name="Task2-txt" />
+            <ui:Label text="-Beat world 1" display-tooltip-when-elided="True" name="Task3-txt" />
         </ui:VisualElement>
-        <ui:VisualElement name="WorldStructureSpacer" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); align-items: center; justify-content: center; background-color: rgba(255, 0, 0, 0); height: 58px; padding-left: 0; margin-left: 0; margin-right: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-direction: row; position: relative; bottom: auto; top: auto; flex-grow: 1;" />
-        <ui:VisualElement name="NavigationButtons" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.17); height: 125px; padding-left: 0; margin-left: 875px; margin-right: 875px; border-top-left-radius: 65px; border-bottom-left-radius: 65px; border-top-right-radius: 65px; border-bottom-right-radius: 65px; flex-direction: row; position: relative; bottom: auto; top: auto; flex-grow: 0; white-space: normal; -unity-text-align: middle-center;">
-            <ui:Button display-tooltip-when-elided="True" name="Settings-btn" style="background-image: url(&apos;/Assets/UI/Path 74.png&apos;); background-color: rgba(56, 56, 56, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); margin-left: 25px; margin-right: 25px; flex-grow: 0; font-size: 12px; width: 75px; height: 75px;" />
-            <ui:Button display-tooltip-when-elided="True" name="Store-btn" style="background-color: rgba(88, 88, 88, 0); background-image: url(&apos;/Assets/UI/Path 71.png&apos;); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); margin-left: 25px; margin-right: 25px; flex-grow: 0; width: 75px; height: 75px;" />
-            <ui:Button display-tooltip-when-elided="True" name="Profile-btn" style="background-color: rgba(88, 88, 88, 0); background-image: url(&apos;/Assets/UI/Group 1687.png&apos;); margin-left: 25px; margin-right: 25px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); flex-grow: 0; width: 80px; height: 80px; align-items: center; justify-content: center;" />
+        <ui:VisualElement name="WorldStructureSpacer" />
+        <ui:VisualElement name="NavigationButtons">
+            <ui:Button display-tooltip-when-elided="True" name="Settings-btn" />
+            <ui:Button display-tooltip-when-elided="True" name="Store-btn" />
+            <ui:Button display-tooltip-when-elided="True" name="Profile-btn" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="SettingsOverlay-scr" style="position: absolute; height: 700px; top: auto; width: 300px; background-color: rgba(90, 223, 219, 0.78); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; margin-top: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
-        <ui:Label text="SETTINGS" display-tooltip-when-elided="True" name="SettingsTitle-txt" style="-unity-font-style: bold; font-size: 20px; color: rgba(0, 0, 0, 0.78); -unity-text-align: upper-center; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;" />
-        <ui:VisualElement name="Music-cnt" style="flex-direction: row;">
-            <ui:Slider picking-mode="Ignore" label="Music" value="42" high-value="100" style="-unity-font-style: bold; font-size: 20px; color: rgb(0, 0, 0); -unity-text-align: middle-center; margin-top: 20px; margin-bottom: 20px;" />
+    <ui:VisualElement name="SettingsOverlay-scr">
+        <Style src="MainMenuWorld.uss" />
+        <ui:Label text="SETTINGS" display-tooltip-when-elided="True" name="SettingsTitle-txt" />
+        <ui:VisualElement name="Music-cnt">
+            <ui:Slider picking-mode="Ignore" label="Music" value="42" high-value="100" />
         </ui:VisualElement>
-        <ui:VisualElement name="SoundEffects-cnt" style="flex-direction: row;">
-            <ui:Slider picking-mode="Ignore" label="Sound Effects" value="42" high-value="100" style="-unity-font-style: bold; font-size: 20px; color: rgb(0, 0, 0); -unity-text-align: middle-center; margin-top: 20px; margin-bottom: 20px;" />
+        <ui:VisualElement name="SoundEffects-cnt">
+            <ui:Slider picking-mode="Ignore" label="Sound Effects" value="42" high-value="100" />
         </ui:VisualElement>
-        <ui:VisualElement name="Notifications-cnt" style="flex-direction: row;">
-            <ui:Slider picking-mode="Ignore" label="Notifications" value="42" high-value="100" style="-unity-font-style: bold; font-size: 20px; color: rgb(0, 0, 0); -unity-text-align: middle-center; margin-top: 20px; margin-bottom: 20px;" />
+        <ui:VisualElement name="Notifications-cnt">
+            <ui:Slider picking-mode="Ignore" label="Notifications" value="42" high-value="100" />
         </ui:VisualElement>
-        <ui:Button text="Sign In" display-tooltip-when-elided="True" name="SignIn-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Log Out" display-tooltip-when-elided="True" name="LogOut-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Credits" display-tooltip-when-elided="True" name="Credits-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Feedback" display-tooltip-when-elided="True" name="Feedback-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Share Game" display-tooltip-when-elided="True" name="ShareGame-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Payment" display-tooltip-when-elided="True" name="Payment-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Privacy" display-tooltip-when-elided="True" name="Privacy-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; margin-top: 12px; margin-bottom: 12px;" />
-        <ui:Button text="Terms of Service" display-tooltip-when-elided="True" name="TermsOfService-btn" style="background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 45, 85, 0.59); font-size: 20px; -unity-text-align: upper-center; margin-top: 12px; margin-bottom: 12px;" />
+        <ui:Button text="Sign In" display-tooltip-when-elided="True" name="SignIn-btn" />
+        <ui:Button text="Log Out" display-tooltip-when-elided="True" name="LogOut-btn" />
+        <ui:Button text="Credits" display-tooltip-when-elided="True" name="Credits-btn" />
+        <ui:Button text="Feedback" display-tooltip-when-elided="True" name="Feedback-btn" />
+        <ui:Button text="Share Game" display-tooltip-when-elided="True" name="ShareGame-btn" />
+        <ui:Button text="Payment" display-tooltip-when-elided="True" name="Payment-btn" />
+        <ui:Button text="Privacy" display-tooltip-when-elided="True" name="Privacy-btn" />
+        <ui:Button text="Terms of Service" display-tooltip-when-elided="True" name="TermsOfService-btn" />
     </ui:VisualElement>
 </ui:UXML>
