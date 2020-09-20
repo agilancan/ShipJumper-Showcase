@@ -690,6 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584e55fbbc8a684ab8a122d3ef18d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScreenEdgeObject: 1
   gameManager: {fileID: 0}
 --- !u!61 &246431474
 BoxCollider2D:
@@ -2062,6 +2063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584e55fbbc8a684ab8a122d3ef18d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScreenEdgeObject: 1
   gameManager: {fileID: 0}
 --- !u!61 &738355580
 BoxCollider2D:
@@ -2431,12 +2433,22 @@ PrefabInstance:
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -8.1
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -2.19
+      value: -5.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -5.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d3841e40fd9c542a61e03e3d612dc2, type: 3}
@@ -2814,6 +2826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8840266599879627571, guid: f89e39ff398bd994ebd20d09a522c940,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.4500122
       objectReference: {fileID: 0}
     - target: {fileID: 8903402218698040769, guid: f89e39ff398bd994ebd20d09a522c940,
         type: 3}
@@ -3237,12 +3254,22 @@ PrefabInstance:
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -11.47
+      value: -8.1
       objectReference: {fileID: 0}
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 8.24
+      value: -2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.9300001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d3841e40fd9c542a61e03e3d612dc2, type: 3}
@@ -3531,6 +3558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584e55fbbc8a684ab8a122d3ef18d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScreenEdgeObject: 1
   gameManager: {fileID: 0}
 --- !u!61 &1393696169
 BoxCollider2D:
@@ -4223,12 +4251,22 @@ PrefabInstance:
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -8.1
+      value: -16.37
       objectReference: {fileID: 0}
     - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -2.19
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -16.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.08999999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d3841e40fd9c542a61e03e3d612dc2, type: 3}
@@ -4980,7 +5018,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shoot at red squares to attract shark
+  m_Text: Shoot at flaming buoy to attract shark
 --- !u!222 &1900394282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5270,6 +5308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584e55fbbc8a684ab8a122d3ef18d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScreenEdgeObject: 1
   gameManager: {fileID: 0}
 --- !u!61 &2054677751
 BoxCollider2D:
@@ -5766,6 +5805,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 11.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 983088524183494332, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -8.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 11.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394202553295974856, guid: 00d3841e40fd9c542a61e03e3d612dc2,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -8.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d3841e40fd9c542a61e03e3d612dc2, type: 3}
