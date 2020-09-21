@@ -1236,7 +1236,7 @@ GameObject:
   - component: {fileID: 544842866578451012}
   - component: {fileID: 544842866578451017}
   - component: {fileID: 544842866578451018}
-  - component: {fileID: 544842866578451019}
+  - component: {fileID: 1917938722644106917}
   m_Layer: 5
   m_Name: Button-btn
   m_TagString: Untagged
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &544842866578451019
+--- !u!114 &1917938722644106917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,7 +1346,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 544842866578451018}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3481276420467635613}
+        m_TargetAssemblyTypeName: MenuLevelCard, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &544842866583387651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1524,7 @@ GameObject:
   - component: {fileID: 544842867110704275}
   - component: {fileID: 544842867110704273}
   - component: {fileID: 544842867110704274}
+  - component: {fileID: -3481276420467635613}
   m_Layer: 5
   m_Name: Card-cnt
   m_TagString: Untagged
@@ -1579,3 +1592,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-3481276420467635613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544842867110704364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686d91db13236b0489b7251b56358f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AreaImage: {fileID: 544842866478896427}
+  LevelNameText: {fileID: 544842865222873698}
+  UnlockedInfo:
+    UnlockedObj: {fileID: 544842866132969474}
+    LevelCompletionOrb: {fileID: 544842866299622189}
+    OptionalOrbs:
+    - {fileID: 544842865575196604}
+    - {fileID: 544842866154223138}
+    - {fileID: 544842866323961661}
+    - {fileID: 544842866123139215}
+  LockInfo:
+    LockedObj: {fileID: 544842865442557402}
+    UnlockAmount: {fileID: 544842866583387649}
+  isUnlocked: 0
